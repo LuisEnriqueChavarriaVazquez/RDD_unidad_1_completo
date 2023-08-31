@@ -1,0 +1,12 @@
+/*Modificacion del zoom de las imagenes con materialize*/
+#materialbox-overlay{
+    z-index: 200000000000000 !important;
+}
+
+.materialboxed.active{
+    z-index: 200000000000001 !important;
+}
+
+.materialbox-caption{
+    z-index: 200000000000001 !important;
+}

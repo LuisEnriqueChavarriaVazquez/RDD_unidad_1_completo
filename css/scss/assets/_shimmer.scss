@@ -1,0 +1,267 @@
+/*Cargador shimmer*/
+
+.shimmer {
+    color: grey;
+    display: inline-block;
+    -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) (right / 300%) 100%;
+    background-repeat: no-repeat;
+    animation: shimmer 2.5s infinite;
+}
+
+@keyframes shimmer {
+    100% {
+        -webkit-mask-position: left;
+    }
+}
+
+/*Caja donde se carga el contenido*/
+
+.loadContentScreen {
+    width: 100%;
+    height: auto;
+}
+
+/*Clase para ocultar los elementos*/
+
+.readyContentScreen {
+    display: none !important;
+}
+
+/*Contenedor y caja de carga*/
+
+.loadingBoxShimmerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.loadingBoxShimmer {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/*Contenedor y textos de carga*/
+
+.loadingTextShimmerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+}
+
+.loadingText {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/*Contenedor y fotos de docentes carga*/
+
+.loadingContactShimmerContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 50px 150px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.loadingContact {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+@media (max-width: 1300px) {
+    .loadingContactShimmerContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .loadingContact {
+        height: 350px;
+    }
+}
+
+@media (max-width: 780px) {
+    .loadingContactShimmerContainer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .loadingContact {
+        height: 350px;
+    }
+}
+
+/*Contenedor para la carga de las configuraciones*/
+
+.loadingContactShimmerConfig {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.loadingContact {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1300px) {
+    .loadingContact {
+        height: 600px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .loadingContactShimmerConfig {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .loadingContact {
+        height: 450px;
+    }
+}
+
+/*Contenedor para la carga de los manuales*/
+
+.loadingContactShimmerManual {
+    display: grid;
+    grid-template-columns: 1fr .2fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 25px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.loadingContact {
+    width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+@media (max-width: 1300px) {
+    .loadingContact {
+        height: 70vh;
+    }
+}
+
+@media (max-width: 1200px) {
+    .loadingContactShimmerManual {
+        display: grid;
+        grid-template-columns: 1fr .4fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .loadingContact {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .loadingContactShimmerManual {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .loadingContact {
+        height: 60vh;
+    }
+}
+
+
+/*Contenedor para la carga de las palabras*/
+
+.loadingContactShimmerWord {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0 100px 50px 100px;
+    gap: 20px;
+}
+
+@media (max-width: 800px) {
+    .loadingContactShimmerWord {
+        padding: 20px 10px 20px 10px;
+        gap: 15px;
+    }
+}
+
+.loadingWord {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+/*Carga del menu de unidades del polilibro*/
+
+.loadingContactShimmerUnidad {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 30px 150px;
+    width: 100%;
+    height: auto;
+}
+
+.loadingUnidad {
+    width: 100%;
+    height: 160px;
+    border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+    .loadingContactShimmerUnidad {
+        gap: 20px;
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .loadingContactShimmerUnidad {
+        gap: 20px;
+        padding: 15px 20px 20px 20px;
+    }
+
+    .loadingUnidad {
+        height: 130px;
+        padding: 20px;
+        padding: 25px 20px 20px 20px;
+    }
+}

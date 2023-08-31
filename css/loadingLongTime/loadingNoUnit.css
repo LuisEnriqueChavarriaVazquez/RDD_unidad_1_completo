@@ -1,0 +1,11 @@
+    /*Algunos estilos para la pantalla de carga de los cuestionarios*/
+    :root {
+        --hue: 223;
+        --bg: hsl(var(--hue), 10%, 90%);
+        --fg: hsl(var(--hue), 10%, 10%);
+        --primary: #566e8a;
+        --primary-l: #6b89ac;
+        --primary-d: #82a6cf;
+        --white: hsl(var(--hue), 10%, 100%);
+        --white-d: hsl(var(--hue), 10%, 45%);
+    }

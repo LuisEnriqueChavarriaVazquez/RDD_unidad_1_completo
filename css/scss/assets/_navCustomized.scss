@@ -1,0 +1,123 @@
+/*Logo del ipn*/
+
+#icoNavIpn {
+  width: 100%;
+  height: 65px;
+  background-image: url("../../img/ipn_blanco.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#icoNavEscom {
+  width: 100%;
+  height: 65px;
+  background-image: url("../../img/escom_blanco.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.titleNavIpnContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-superior {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  transition: all 0.2s ease;
+}
+
+.nav-superior-hidden {
+  height: 0px !important;
+}
+
+.nav-buttonExpand {
+  height: 45px !important;
+}
+
+#tabs-swipe-demo {
+  transition: all 1s ease !important;
+}
+
+#menuStickyUnity {
+  transition: all .1s ease !important;
+  z-index: 1000000;
+}
+
+.sidenav {
+  z-index: 10000000000;
+}
+
+.sidenav-overlay {
+  z-index: 1000000000;
+}
+
+.tabsFixed {
+  position: fixed !important;
+  top: 0;
+}
+
+@media (max-width: 1000px) {
+  .titleNavIpn {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-superior {
+    height: 60px;
+  }
+
+  #icoNavIpn,
+  #icoNavEscom {
+    width: 100%;
+    height: 35px;
+  }
+
+  .titleNavIpn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .titleNavIpn {
+    font-size: .9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .titleNavIpn {
+    font-size: .8rem;
+  }
+}
+
+.hidenav-superior {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00345c;
+
+  > i {
+    font-size: 2rem;
+  }
+}
+
+li.indicator {
+  height: 4px !important;
+  background-color: #ac5c79 !important;
+}

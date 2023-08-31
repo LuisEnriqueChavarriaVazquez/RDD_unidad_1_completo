@@ -1,0 +1,39 @@
+// Aqui se definen los estilos para el pushpin o mejor conocido como navbar sticky
+.navTitlteManualDefault {
+    transition: all 0.2s ease-in-out;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+.stickyHeaderManual {
+    position: sticky;
+    height: 80px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+@media (max-width: 800px) {
+    .navTitlteManualDefault {
+        height: 70px;
+        padding: 0 20px;
+        font-size: 1.6rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .stickyHeaderManual {
+        height: 64px;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,29 @@
+.progress{
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background-color: #3b3b3b;
+    position: fixed;
+    top: 0;
+    z-index: 1000000000;
+}
+
+.determinate{
+    height: 3px;
+    background: rgb(194, 194, 194) !important;
+    background: -moz-linear-gradient(90deg, rgb(194, 194, 194) 10%, rgb(255, 255, 255) 100%) !important;
+    background: -webkit-linear-gradient(90deg, rgb(194, 194, 194) 10%, rgb(255, 255, 255) 100%) !important;
+    background: linear-gradient(90deg, rgb(194, 194, 194) 10%, rgb(255, 255, 255) 100%) !important;
+    max-width: 100%;
+    transition: all .1s ease-in-out;
+}
+
+.progressContent{
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    background-color: #3b3b3b;
+    position: relative;
+    top: 64px;
+    z-index: 1000000000;
+}

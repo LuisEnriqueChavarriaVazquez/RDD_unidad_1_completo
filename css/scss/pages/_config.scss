@@ -1,0 +1,71 @@
+@use '../assets/configAssets/_textAdjust.scss';
+
+.containerSettings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  @media (max-width: 1000px) {
+    .containerSettings {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /*Card de modo oscuro y modo luz*/
+  
+  .colorCard {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    margin-bottom: 10px;
+    transition: all .1s ease-in-out;
+  
+    &:hover {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: auto;
+    }
+  }
+  
+  .iconColorSelection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    font-size: 30px;
+  }
+  
+  .textColorSelection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 550px) {
+    .textColorSelection {
+      font-size: 18px;
+    }
+  }
+  
+  /*Card color sepia*/
+  
+  .colorCardSepia {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    margin-bottom: 10px;
+    transition: all .1s ease-in-out;
+  }
+  
+  .barSepiaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+  }
+  

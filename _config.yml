@@ -1,0 +1,6 @@
+# Configuración de las páginas de error personalizadas
+permalink: /404.html
+permalink: /500.html
+permalink: /403.html
+permalink: /401.html
+permalink: /504.html

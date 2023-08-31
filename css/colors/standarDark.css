@@ -1,0 +1,224 @@
+/*Color del body*/
+body {
+    background-color: #272c31;
+}
+
+/*Base palette*/
+.cl1 {
+    background-color: #be8899;
+}
+
+.cl2 {
+    background-color: #a37684;
+}
+
+.cl3 {
+    background-color: #8a616e;
+}
+
+.cl4 {
+    background-color: #6b4953;
+}
+
+.cl5 {
+    background-color: #4d333a;
+}
+
+.cl6 {
+    background-color: #38252a;
+}
+
+/*White element*/
+.clw {
+    background-color: #3b424b;
+}
+
+/*Grey element*/
+.clgreyl1 {
+    background-color: #272c31;
+}
+
+.clgreyl2 {
+    background-color: #2e343a;
+}
+
+.clgreyl3 {
+    background-color: #3b424b;
+}
+
+.clgreyl4 {
+    background-color: #444c57;
+}
+
+.clgreyl4 {
+    background-color: #aaa;
+}
+
+/*Text style*/
+.clbktx {
+    color: #ffffff !important;
+}
+
+.clgreytx {
+    color: #e4e4e4 !important;
+}
+
+.clwtx {
+    color: #000000 !important;
+}
+
+/*Border element*/
+.clborder {
+    border-bottom: hsl(0, 0%, 85%) 30px solid;
+}
+
+.clbordert{
+    border: #444c57 3px solid;
+}
+
+.clbordertdotted{
+    border: #6f7b8d 3px dotted;
+}
+
+.rightDropped{
+    background-color: #525b68;
+    border: 0px;
+}
+
+/*Borders para el manual*/
+.table-of-contents a {
+    color: #ffffff;
+}
+
+.table-of-contents a:hover {
+    font-weight: 600;
+    color: #ffffff;
+    padding-left: 15px;
+    border-left: 6px solid #c9c9c9;
+}
+
+.table-of-contents a.active {
+    font-weight: 600;
+    padding-left: 14px;
+    color: #ffffff;
+    border-left: 10px solid #ffffff;
+}
+
+/*Colores de inputs*/
+input[type=range]+.thumb {
+    background-color: #835865 !important;
+}
+
+input[type=range]+.thumb.active .value {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    position: relative;
+    bottom: 5px;
+    left: 1px;
+}
+
+input[type=range]::-moz-range-track {
+    height: 15px;
+    border-radius: 10px;
+    background: #ffe1ea;
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    background: #9e6a79;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 15px;
+    border-radius: 10px;
+    background: #9e6a79;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    background: #9e6a79;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:before,
+[type="radio"].with-gap:checked+span:after {
+    border: 2px solid #f3b5c7;
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:after {
+    background-color: #f3b5c7;
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+    background-color: #9e6a79 !important;
+    color: #fff !important;
+}
+
+.btn:focus,
+.btn-large:focus,
+.btn-small:focus,
+.btn-floating:focus {
+    background-color: #9e6a79 !important;
+    color: #fff !important;
+}
+
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+input[type="range"] {
+    border: 0px solid white !important;
+}
+
+/*Configuraciones de textos*/
+.activeButtonText {
+    background-color: #7e515e !important;
+    color: #e4e4e4 !important;
+}
+
+/*Menu lateral de textos*/
+.leftBorderMenuPrincipal {
+    border-bottom: #7e515e 70px solid !important;
+    overflow-x: hidden;
+}
+
+.leftBorderMenuPrincipal li {
+    margin: 5px 10px;
+}
+
+.activeButtonTextLateralPrincipal {
+    border-left: 10px #7e515e solid;
+    background-color: #444c57;
+    border-radius: 5px;
+    transition: all .1s ease-in-out;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.lateralMenuAdjustTextTitlePrincipal {
+    background-color: #7e515e;
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 350px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}

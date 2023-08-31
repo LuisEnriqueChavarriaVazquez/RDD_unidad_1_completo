@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" id="generalDocument">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>RDD Unidad 1</title>
+    <link rel="shortcut icon" href="img/ipn.ico" type="image/x-icon">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/scss/addsOn/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/scss/styles.css">
+    <link rel="stylesheet" href="css/scss/addsOn/driver.min.css">
+    <link rel="stylesheet" href="css/loadingLongTime/loading.css">
+
+    <!--Colors-->
+    <link id="colorAdaptable" rel="stylesheet" href="css/colors/standarColors.css">
+    <link id="unitColorsAdaptable" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/materialize.min.js"></script>
+    <script defer src="js/activateComponentsMaterialize.js"></script>
+
+    <!--Componentes inyectables-->
+    <script defer src="js/components/header.js"></script>
+    <script defer src="js/components/footer.js"></script>
+
+    <!--Scripts propios-->
+    <script defer src="js/toggleMenuLateralUnity.js"></script>
+    <script defer src="js/menuSticky.js"></script>
+    <script defer src="js/collapsible.js"></script>
+    <script defer src="js/activeLinksUnits/activeLinksU1.js"></script>
+    <script defer src="js/configuraciones/modoLuz.js"></script>
+    <script defer src="js/configuraciones/modoLectura.js"></script>
+    <script defer src="js/configuraciones/textSizerLateral.js"></script>
+    <script defer src="js/loading/loadingCuestionario.js"></script>
+    <script defer src="js/reactivateZoomPhotosMaterialized.js"></script>
+    <script class="hide-on-med-and-down" defer src="js/progressReading/progressReadingContent.js"></script>
+    <script class="hide-on-large-only" defer src="js/progressReading/progressReading.js"></script>
+    
+    <!-- <script defer src="js/noCopy.js"></script> -->
+
+    <!--Script para la carga de los contenidos-->
+    <script defer src="js/cargaContenidos/unidad1.js"></script>
+    <script defer src="js/cargaContenidos/tabsPositioning.js"></script>
+
+    <!--Tutorial interactivo-->
+    <script defer src="js/driver.min.js"></script>
+    <script defer src="js/tutorialInteractiveContenidoUnidad.js"></script>
+
+</head>
+
+<body>
+
+    <!--Pantalla de carga para los cuestionarios en caso de que tarde mucho-->
+    <section id="bookLoading" class="clgreyl1">
+        <div class="book">
+            <div class="book__pg-shadow"></div>
+            <div class="book__pg"></div>
+            <div class="book__pg book__pg--2"></div>
+            <div class="book__pg book__pg--3"></div>
+            <div class="book__pg book__pg--4"></div>
+            <div class="book__pg book__pg--5"></div>
+        </div>
+        <div class="clbktx textoStandar clgreyl2 border1 textoDeCarga">Cargando contenidos</div>
+    </section>
+
+
+    <section>
+        <!--Navbar superior-->
+        <div class="nav-superior nav-superiorUnit1" id="nav-superior"></div>
+        <!--Navbar principal-->
+        <nav id="menuStickyUnity">
+            <div class="nav-wrapper navUnit1" id="menuIconUnity">
+                <a href="polilibro.html" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
+                        class="material-icons"></i></a>
+                <a class="brand-logo titleUnity white-text">Unidad I&nbsp;&nbsp;
+                    <span class="border1 textoStandar titleUnityColorUnit1">
+                        La empresa y su entorno
+                    </span>
+                </a>
+                <!--Barra de progreso de lectura en modo computadora-->
+                <div class="progressContent hide-on-med-and-down">
+                    <div class="determinate" id="progressReadingContent"></div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!--Barra de progreso de lectura para modo celular-->
+    <div class="progress hide-on-large-only">
+        <div class="determinate" id="progressReading"></div>
+    </div>
+
+
+    <section class="fullUnity clgreyl1">
+        <!--Contenidos principales de la unidad-->
+        <section id="lateralUnityMenuBackOne" class="lateralUnityMenuBackOne menuLateralWidthShow"
+            style="background-color: #f0badb;">
+            <section id="lateralUnityMenuBackTwo" class="lateralUnityMenuBackTwo menuLateralWidthShow"
+                style="background-color: #eb9ece;">
+                <section id="lateralUnityMenuBackThree" class="lateralUnityMenuBackThree menuLateralWidthShow"
+                    style="background-color: #CE7BB0;">
+                    <section id="lateralUnityMenuBackFour" class="lateralUnityMenuBackFour menuLateralWidthShow"
+                        style="background-color: #9b5e84;">
+                        <section id="lateralUnityMenu" class="lateralUnityMenu clw">
+                            <div id="lateralUnityMenuSectionContainer" class="lateralUnityMenuSectionContainer">
+
+                                <a contador="0"
+                                    class="deskOption navOptionsContent cardOpcionesMenuLateral waves-effect waves-light clgreyl2 border1 shadow2 activeLinkOptionsContentUnit1"
+                                    id="a1tutorialButton">
+                                    <i contador="0" class="deskOption material-icons clbktx">school</i>
+                                    <p contador="0" class="deskOption clbktx">Inicio</p>
+                                </a>
+
+                                <a contador=""
+                                    class="deskOption navOptionsContent cardOpcionesMenuLateral waves-effect waves-light clgreyl2 border1 shadow2"
+                                    id="a10tutorialButton" href="manual.html">
+                                    <i contador="" class="deskOption material-icons clbktx">sos</i>
+                                    <p contador="" class="deskOption clbktx">Manual de usuario</p>
+                                </a>
+
+
+
+                                <ul id="a2tutorialButton" class="collapsible clgreyl2 border1 shadow2">
+                                    <li>
+                                        <div class="collapsible-header clgreyl2 clbktx"><i
+                                                class="material-icons">local_library</i>Contenidos</div>
+                                        <div class="collapsible-body">
+                                            <a contador="1"
+                                                class="waves-effect waves-light clbktx deskOption navOptionsContent rememberStateUnit1 mainSectionMenu leftBorderUnit1">
+                                                Introducción
+                                            </a>
+                                            <a contador="2"
+                                                class="waves-effect waves-light clbktx deskOption navOptionsContent rememberStateUnit1 mainSectionMenu leftBorderUnit1">
+                                                1.1 La empresa
+                                            </a>
+                                            <a contador="3"
+                                                class="waves-effect waves-light clbktx deskOption navOptionsContent rememberStateUnit1 secondarySectionMenu leftBorderSecondaryUnit1">
+                                                1.1.1 Constitución jurídica
+                                            </a>
+                                            <a contador="4"
+                                                class="waves-effect waves-light clbktx deskOption navOptionsContent rememberStateUnit1 secondarySectionMenu leftBorderSecondaryUnit1">
+                                                1.1.2 El área financiera en la estructura organizacional
+                                            </a>
+                                            <a contador="5"
+                                                class="waves-effect waves-light clbktx deskOption navOptionsContent rememberStateUnit1 mainSectionMenu leftBorderUnit1">
+                                                1.2 Función y objetivo de las finanzas empresariales
+                                            </a>
+                                            <a contador="6"
+                                                class="waves-effect waves-light clbktx deskOption navOptionsContent rememberStateUnit1 mainSectionMenu leftBorderUnit1">
+                                                1.3 Las finanzas empresariales y su relación con otras disciplinas
+                                            </a>
+                                            <a contador="7"
+                                                class="waves-effect waves-light clbktx deskOption navOptionsContent rememberStateUnit1 mainSectionMenu leftBorderUnit1">
+                                                1.4 Factores del micro y macro ambiente que impactan a la empresa y
+                                                a sus finanzas
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            
+                                <a contador=""
+                                    class="deskOption navOptionsContent cardOpcionesMenuLateral waves-effect waves-light clgreyl2 border1 shadow2"
+                                    id="a9tutorialButton" href="glosario.html">
+                                    <i contador="" class="deskOption material-icons clbktx">library_books</i>
+                                    <p contador="" class="deskOption clbktx">Glosario</p>
+                                </a>
+                                <a contador="8"
+                                    class="deskOption navOptionsContent cardOpcionesMenuLateral waves-effect waves-light clgreyl2 border1 shadow2"
+                                    id="a3tutorialButton">
+                                    <i contador="8" class="deskOption material-icons clbktx">auto_stories</i>
+                                    <p contador="8" class="deskOption clbktx">Material de apoyo</p>
+                                </a>
+                                <a contador="9"
+                                    class="deskOption navOptionsContent cardOpcionesMenuLateral waves-effect waves-light clgreyl2 border1 shadow2"
+                                    id="a4tutorialButton">
+                                    <i contador="9" class="deskOption material-icons clbktx">fitness_center</i>
+                                    <p contador="9" class="deskOption clbktx">Actividades de aprendizaje</p>
+                                </a>
+                                <a href="unidad1_evaluacion.html" id="a3tutorialButton">
+                                    <div class="deskOption navOptionsContent cardOpcionesMenuLateral waves-effect waves-light clgreyl2 border1 shadow2"
+                                        id="a6tutorialButton">
+                                        <i contador="15" class="deskOption material-icons clbktx">quiz</i>
+                                        <p contador="15" class="deskOption clbktx">Evaluación</p>
+                                    </div>
+                                </a>
+                                <a contador="10"
+                                    class="deskOption navOptionsContent cardOpcionesMenuLateral waves-effect waves-light clgreyl2 border1 shadow2"
+                                    id="a5tutorialButton">
+                                    <i contador="10" class="deskOption material-icons clbktx">diversity_2</i>
+                                    <p contador="10" class="deskOption clbktx">Cierre de unidad temática</p>
+                                </a>
+
+                                <a contador=""
+                                    class="deskOption navOptionsContent cardOpcionesMenuLateral waves-effect waves-light clgreyl2 border1 shadow2"
+                                    id="a7tutorialButton" href="referencias.html">
+                                    <i contador="" class="deskOption material-icons clbktx">format_quote</i>
+                                    <p contador="" class="deskOption clbktx">Referencias</p>
+                                </a>
+                                <a class="deskOption navOptionsContent cardOpcionesMenuLateral waves-effect waves-light clgreyl2 border1 shadow2"
+                                    id="a8tutorialButton" href="contacto.html">
+                                    <i contador="" class="deskOption material-icons clbktx">alternate_email</i>
+                                    <p contador="" class="deskOption clbktx">Contacto</p>
+                                </a>
+
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <!--Menu para los dispositivos móviles-->
+        <ul id="slide-out" class="sidenav clw leftBorderUnit1Menu" style="padding: 10px;">
+            <p class="textoTitulo white-text lateralMenuAdjustTextTitle">Secciones</p>
+
+            <!--Inicio al sitio-->
+            <li><a contador="0" class="clbktx textoStandar clw border0 activeButtonTextLateral" href="unidad1.html"><i
+                        class="material-icons clbktx">looks_one</i>Inicio</a></li>
+
+
+            <!--Primera seccion-->
+            <div class="mobileOptionsContainer containerSectionLateralMobileMenu clgreyl1 border0">
+                <div class="truncate waves-effect clbktx clgreyl2 titleSectionMobileMenu" id="primeraSeccion"><i
+                        class="material-icons" id="primeraSeccionIcon">expand_more</i><b>Introducción</b>
+                </div>
+
+                <p contador="1"
+                    class="mobileOption navOptionsContentMobileMenu truncate waves-effect clbktx primeraSeccionHide">
+                    Introducción al recurso y contenido</p>
+            </div>
+
+            <div class="mobileOptionsContainer">
+                <!--Pagina externa-->
+                <li contador="" style="cursor: pointer;" class="mobileOption navOptionsContentMobileMenu"><a contador=""
+                    class="mobileOption clbktx textoStandar truncate clgreyl1 border0" href="manual.html"><i
+                        class="material-icons clbktx">sos</i>Manual de usuario</a></li>
+            </div>
+
+            <!--Segunda seccion-->
+            <div class="mobileOptionsContainer containerSectionLateralMobileMenu clgreyl1 border0">
+                <div class="truncate waves-effect clbktx clgreyl2 titleSectionMobileMenu" id="segundaSeccion"><i
+                        class="material-icons" id="segundaSeccionIcon">expand_more</i><b>1.1 La empresa</b>
+                </div>
+                <p contador="2"
+                    class="mobileOption navOptionsContentMobileMenu truncate waves-effect clbktx segundaSeccionHide">
+                    1.1 La empresa</p>
+
+                <p contador="3"
+                    class="mobileOption navOptionsContentMobileMenu truncate waves-effect clbktx segundaSeccionHide">
+                    1.1.1 Constitución jurídica</p>
+                <p contador="4"
+                    class="mobileOption navOptionsContentMobileMenu truncate waves-effect clbktx segundaSeccionHide">
+                    1.1.2 El área financiera en la estructura organizacional</p>
+            </div>
+
+
+
+            <div class="mobileOptionsContainer">
+
+                <li contador="5" style="cursor: pointer;" class="mobileOption navOptionsContentMobileMenu"><a
+                        contador="5" class="mobileOption clbktx textoStandar truncate clgreyl1 border0">1.2 Función y
+                        objetivo de las finanzas empresariales</a></li>
+
+                <li contador="6" style="cursor: pointer;" class="mobileOption navOptionsContentMobileMenu"><a
+                        contador="6" class="mobileOption clbktx textoStandar truncate clgreyl1 border0">1.3 Las finanzas
+                        empresariales y su relación con otras disciplinas</a></li>
+
+                <li contador="7" style="cursor: pointer;" class="mobileOption navOptionsContentMobileMenu"><a
+                        contador="7" class="mobileOption clbktx textoStandar truncate clgreyl1 border0">1.4 Factores del
+                        micro y macro ambiente que impactan a la empresa y a sus finanzas</a></li>
+                
+                <!--Pagina externa-->
+                <li contador="" style="cursor: pointer;" class="mobileOption navOptionsContentMobileMenu"><a contador=""
+                    class="mobileOption clbktx textoStandar truncate clgreyl1 border0" href="glosario.html"><i
+                        class="material-icons clbktx">library_books</i>Glosario</a></li>
+
+                <li contador="8" style="cursor: pointer;" class="mobileOption navOptionsContentMobileMenu"><a
+                        contador="8" class="mobileOption clbktx textoStandar truncate clgreyl1 border0"><i
+                            class="material-icons clbktx">auto_stories</i>Material de apoyo</a></li>
+
+                <li contador="9" style="cursor: pointer;" class="mobileOption navOptionsContentMobileMenu"><a
+                        contador="9" class="mobileOption clbktx textoStandar truncate clgreyl1 border0"><i
+                            class="material-icons clbktx">fitness_center</i>Actividades de aprendizaje</a></li>
+
+                <!--Pagina externa-->
+                <li contador="" style="cursor: pointer;" class="mobileOption navOptionsContentMobileMenu"><a contador=""
+                    class="mobileOption clbktx textoStandar truncate clgreyl1 border0"
+                    href="unidad1_evaluacion.html"><i class="material-icons clbktx">quiz</i>Evaluación</a></li>
+
+                <li contador="10" style="cursor: pointer;" class="mobileOption navOptionsContentMobileMenu"><a
+                        contador="10" class="mobileOption clbktx textoStandar truncate clgreyl1 border0"><i
+                            class="material-icons clbktx">diversity_2</i>Cierre</a></li>
+
+
+                <li contador="11" style="cursor: pointer;" class="mobileOption navOptionsContentMobileMenu"><a
+                        contador="11" class="mobileOption clbktx textoStandar truncate clgreyl1 border0"><i
+                            class="material-icons clbktx">format_quote</i>Referencias</a></li>
+
+                <!--Pagina externa-->
+                <li contador="" style="cursor: pointer;" class="mobileOption navOptionsContentMobileMenu"><a contador=""
+                        class="mobileOption clbktx textoStandar truncate clgreyl1 border0" href="contacto.html"><i
+                            class="material-icons clbktx">alternate_email</i>Contacto</a></li>
+
+
+
+            </div>
+        </ul>
+
+        <!--Menu para la configuración de los textos-->
+        <ul id="slide-fontAdjust" class="sidenav clw leftBorderUnit1Menu">
+            <p class="textoTitulo white-text lateralMenuAdjustTextTitle">Textos</p>
+            <li><a class="clbktx textoStandar clw border1" href="#" id="adjustFont_1"><i
+                        class="material-icons clbktx">format_bold</i>Texto en negritas</a></li>
+            <li><a class="clbktx textoStandar clw border1" href="#" id="adjustFont_2"><i
+                        class="material-icons clbktx">format_italic</i>Texto en italica</a></li>
+            <li><a class="clbktx textoStandar clw border1" href="#" id="adjustFont_3"><i
+                        class="material-icons clbktx">format_underlined</i>Texto subrayado</a></li>
+            <li><a class="clbktx textoStandar clw border1" href="#" id="adjustFont_6"><i
+                        class="material-icons clbktx">border_color</i>Palabras clave</a></li>
+            <li><a class="clbktx textoStandar clw border1" href="#" id="adjustFont_7"><i
+                        class="material-icons clbktx">format_align_left</i>Quitar justificado</a></li>
+            <li><a class="clbktx textoStandar clw border1" href="#" id="adjustFont_8"><i
+                        class="material-icons clbktx">format_line_spacing</i>Espaciado de lineas</a></li>
+            <div id="adjustFont_size" style="display: none;">
+                <li><a class="clbktx textoStandar clw border1 textSizeOne" href="#"><i class="clbktx">H1</i>Tamaño de
+                        fuente
+                        H1</a></li>
+                <li><a class="clbktx textoStandar clw border1 textSizeTwo" href="#"><i class="clbktx">H2</i>Tamaño de
+                        fuente
+                        H2</a></li>
+                <li><a class="clbktx textoStandar clw border1 textSizeThree" href="#"><i class="clbktx">H3</i>Tamaño de
+                        fuente H3</a></li>
+            </div>
+        </ul>
+
+        <!--Contenidos principales de texto-->
+        <section id="lateralUnityContent" class="lateralUnityContentList clgreyl1">
+
+        </section>
+    </section>
+
+
+    <!--Inyectamos componente de footer-->
+    <section id="footerListener"></section>
+
+    <a href="#" data-target="slide-out"
+        class="border5 shadow2 white-text waves-effect waves-light buttonMenuMobile sidenav-trigger hide-on-large-only"
+        style="background-color: #9b5e84;"><i class="material-icons">menu</i></a>
+    <a href="#" data-target="mobile-demo"
+        class="border5 shadow2 white-text waves-effect waves-light buttonMenuMobile sidenav-trigger hide-on-med-and-down"
+        style="background-color: #9b5e84; width: 54px; height: 54px;">
+        <i class="material-icons" id="menuIconUnityContent">close</i>
+    </a>
+
+    <!--Botones para la configuracion de los textos-->
+    <a href="#" data-target="slide-fontAdjust"
+        class="border5 shadow2 white-text waves-effect waves-light buttonFontAdjustMobile sidenav-trigger"
+        style="background-color: #754764; width: 54px; height: 54px;">
+        <i class="material-icons">text_format</i>
+    </a>
+
+    <!--Botones para la configuracion de la interfaz-->
+    <a href="configuracion.html" data-target="slide-fontAdjust"
+        class="border5 shadow2 white-text waves-effect waves-light buttonScreenAdjustMobile"
+        style="background-color: #533247; width: 54px; height: 54px;">
+        <i class="material-icons">settings</i>
+    </a>
+
+    <!--Boton de tutorial-->
+    <a class="waves-effect waves-light btn-large botonPolilibro border1 cl4 hide-on-med-and-down scale-transition"
+        id="buttonComputerHelp"><i class="material-icons left">help</i>Ayuda</a>
+
+</body>
+
+</html>

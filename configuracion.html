@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" id="generalDocument">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Configuración</title>
+    <link rel="shortcut icon" href="img/ipn.ico" type="image/x-icon">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/scss/addsOn/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/scss/styles.css">
+    <link rel="stylesheet" href="css/scss/addsOn/driver.min.css">
+
+    <!--Colors-->
+    <link id="colorAdaptable" rel="stylesheet" href="css/colors/standarColors.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/materialize.min.js"></script>
+    <script defer src="js/activateComponentsMaterialize.js"></script>
+
+    <!--Componentes inyectables-->
+    <script defer src="js/components/header.js"></script>
+    <script defer src="js/components/footer.js"></script>
+
+    <!--Scripts de configuraciones-->
+    <script defer src="js/configuraciones/modoLuz.js"></script>
+    <script defer src="js/configuraciones/modoLectura.js"></script>
+    <script defer src="js/configuraciones/textsizer.js"></script>
+    <script defer src="js/loading/loadingConfig.js"></script>
+    <script defer src="js/noCopy.js"></script>
+
+    <!--Tutorial interactivo-->
+    <script defer src="js/driver.min.js"></script>
+    <script defer src="js/tutorialInteractiveConfig.js"></script>
+
+    <!--Scripts para saber datos sobre la memoria-->
+    <script defer src="js/memoria/datosGuardados.js"></script>
+
+</head>
+
+<body>
+
+    <section>
+        <!--Navbar superior-->
+        <div class="nav-superior cl1" id="nav-superior"></div>
+
+        <!--Navbar principal-->
+        <nav>
+            <div class="nav-wrapper cl2">
+                <a href="unidad1.html" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
+                        class="material-icons">arrow_back</i></a>
+                <a class="brand-logo titleUnity">Configuración</a>
+            </div>
+        </nav>
+    </section>
+
+    <section class="containerSettings clgreyl1 readyContentScreen">
+        <div class="cardDesign clw shadow2 border1">
+            <!--Modo oscuro/luz-->
+            <p class="textoTitulo clbktx">
+                Color
+                <a class="waves-effect waves-light tooltipped clbktx" style="position: relative; bottom: 0px;"
+                    data-position="bottom" data-tooltip="Elegir el modo oscuro o el modo luz.">
+                    <i class="material-icons">help</i>
+                </a>
+            </p>
+            <div id="modOscuro" class="waves-effect colorCard shadow2 border1 clgreyl1">
+                <i id="iconModOscuro" class="cl4 white-text iconColorSelection material-icons">dark_mode</i>
+                <p id="textModOscuro" class="textColorSelection clbktx">Modo oscuro</p>
+            </div>
+
+            <!--Modo de lectura-->
+            <p class="textoTitulo clbktx">
+                Modo lectura
+                <a class="waves-effect waves-light tooltipped clbktx" style="position: relative; bottom: 0px;"
+                    data-position="bottom" data-tooltip="Elegir el grado de tono sepia.">
+                    <i class="material-icons">help</i>
+                </a>
+            </p>
+            <div class="colorCardSepia shadow2 border1 clgreyl1" id="a2tutorialButton">
+                <i id="iconModSepia" class="cl4 white-text iconColorSelection material-icons">brightness_7</i>
+                <div>
+                    <p class="range-field barSepiaContainer">
+                        <input type="range" id="modSepia" min="0" max="3" />
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardDesign clw shadow2 border1">
+            <!--Modificación de los textos-->
+            <p class="textoTitulo clbktx">Texto
+                <a class="waves-effect waves-light tooltipped clbktx" style="position: relative; bottom: 0px;"
+                    data-position="bottom"
+                    data-tooltip="Configurar el texto que aparecera en las unidades para su lectura">
+                    <i class="material-icons">help</i>
+                </a>
+            </p>
+            <div class="cardFontAdjustFather shadow2 border1 clgreyl1">
+                <div class="cardFontAdjustButton waves-effect clw clbktx shadow2 border1" id="adjustFont_1"><i
+                        class="iconAdjustButton waves-effect cl4 white-text material-icons">format_bold</i> <span
+                        class="descAdjustButton">Negritas</span> </div>
+                <div class="cardFontAdjustButton waves-effect clw clbktx shadow2 border1" id="adjustFont_2"><i
+                        class="iconAdjustButton waves-effect cl4 white-text material-icons">format_italic</i> <span
+                        class="descAdjustButton">Itálica</span></div>
+                <div class="cardFontAdjustButton waves-effect clw clbktx shadow2 border1" id="adjustFont_3"><i
+                        class="iconAdjustButton waves-effect cl4 white-text material-icons">format_underlined</i> <span
+                        class="descAdjustButton">Subrayado</span></div>
+                <div class="cardFontAdjustButton waves-effect clw clbktx shadow2 border1" id="adjustFont_6"><i
+                        class="iconAdjustButton waves-effect cl4 white-text material-icons">border_color</i> <span
+                        class="descAdjustButton">Palabras clave</span></div>
+                <div class="cardFontAdjustButton waves-effect clw clbktx shadow2 border1" id="adjustFont_7"><i
+                        class="iconAdjustButton waves-effect cl4 white-text material-icons">format_align_left</i> <span
+                        class="descAdjustButton">Quitar justificado</span></div>
+                <div class="cardFontAdjustButton waves-effect clw clbktx shadow2 border1" id="adjustFont_8"><i
+                        class="iconAdjustButton waves-effect cl4 white-text material-icons">format_line_spacing</i>
+                    <span class="descAdjustButton">Altura de linea</span>
+                </div>
+                <!-- <div class="cardFontAdjustButtonSize waves-effect clw clbktx shadow2 border1" id="adjustFont_size">
+                    <i class="textSizeOne iconAdjustButtonSize textoStandar waves-effect cl4 white-text">H1</i>
+                    <i class="textSizeTwo iconAdjustButtonSize textoStandar waves-effect cl4 white-text">H2</i>
+                    <i class="textSizeThree iconAdjustButtonSize textoStandar waves-effect cl4 white-text">H3</i>
+                </div> -->
+                <div id="adjustPreview">
+                    <p class="textoTitulo clbktx">Vista previa</p>
+                    <div class="adjustPreviewTextContainer clw clbktx shadow3 border1" id="adjustPreviewContainer">
+                        <span class="textoDinamicoIdentificador textoReadingH2">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Iusto ipsam omnis sunt <i class="keyWord"> lorem clave de ejemplo </i>
+                            illo deserunt asperiores minima, magni quas eius nulla temporibus placeat alias suscipit <i class="keyWord"> lorem clave de ejemplo </i>
+                            quo, perspiciatis earum culpa voluptate recusandae.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contenido de carga de la página-->
+    <section class="loadContentScreen"></section>
+
+    <!--Boton de tutorial-->
+    <a class="waves-effect waves-light btn-large botonPolilibro border1 cl4" id="buttonComputerHelp"><i
+            class="material-icons left">help</i>Ayuda</a>
+
+    <!--Inyectamos componente de footer-->
+    <section id="footerListener"></section>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/*Textos*/
+.textoStandar {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  text-align: justify;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .textoStandar {
+    font-size: 1rem;
+  }
+}
+
+/*Textos tabla*/
+.textoStandarTable {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  text-align: justify;
+}
+
+@media (max-width: 800px) {
+  .textoStandarTable {
+    font-size: 1rem;
+  }
+}
+
+/*Textos*/
+.textoPregunta {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  text-align: justify;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .textoPregunta {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .textoPregunta {
+    font-size: .83rem;
+    line-height: 13.5px;
+    text-align: left;
+  }
+}
+
+.textoConceptos {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+  text-align: justify;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .textoConceptos {
+    font-size: 0.9rem;
+  }
+}
+
+.textoFooter {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.textoTitulo {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0 0 6px 0;
+}
+
+.textoGrande {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0 0 0 0;
+}
+
+.textoTituloFullText {
+  padding-left: 0px;
+}
+
+@media (max-width: 800px) {
+  .textoTitulo {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .textoGrande {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  .textoFooter {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .textoTitulo {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .textoGrande {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .textoTituloFullText {
+    padding-left: 5px;
+  }
+}
+
+.textoList {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.titleNavIpn {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+
+.titleUnity {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  margin: 0px !important;
+}
+
+@media (max-width: 800px) {
+  .titleUnity {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    margin: 0px !important;
+  }
+}
+
+/*Titulos de las unidades*/
+
+.titleUnityColorUnit1 {
+  padding: 5px 15px;
+  font-weight: 800;
+  font-size: 1.3rem;
+  background-color: #ffffff;
+  color: #794453;
+  height: auto;
+  display: inline;
+}
+
+.titleUnityColorUnit2 {
+  padding: 5px 15px;
+  font-weight: 800;
+  font-size: 1.3rem;
+  background-color: #ffffff;
+  color: #8a5d62;
+  height: auto;
+  display: inline;
+}
+
+.titleUnityColorUnit3 {
+  padding: 5px 15px;
+  font-weight: 800;
+  font-size: 1.3rem;
+  background-color: #ffffff;
+  color: #4d394d;
+  height: auto;
+  display: inline;
+}
+
+.titleUnityColorUnit4 {
+  padding: 5px 15px;
+  font-weight: 800;
+  font-size: 1.3rem;
+  background-color: #ffffff;
+  color: #53302c;
+  height: auto;
+  display: inline;
+}
+
+.titleUnityColorUnit5 {
+  padding: 5px 15px;
+  font-weight: 800;
+  font-size: 1.3rem;
+  background-color: #ffffff;
+  color: #697088;
+  height: auto;
+  display: inline;
+}
+
+@media (max-width: 1000px) {
+  .titleUnityColorUnit1,
+  .titleUnityColorUnit2,
+  .titleUnityColorUnit3,
+  .titleUnityColorUnit4,
+  .titleUnityColorUnit5 {
+    font-size: 1rem;
+    display: none;
+  }
+}
+
+//Estilo para los titulos de tarjetas en cada seccion del manual
+.subTitleCard {
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+//Estilos para las tarjetas para las actividades y materiales de apoyo
+.cardTitleActividad {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+@media (max-width: 800px) {
+  .cardTitleActividad {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+blockquote{
+  margin: 0 0 20px 0 !important;
+  border-left: 5px solid #d894ab;
+  font-weight: 500 !important;
+  border-radius: 0 10px 10px 0;
+  padding: 20px;
+}

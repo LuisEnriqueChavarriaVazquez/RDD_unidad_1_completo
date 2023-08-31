@@ -1,0 +1,233 @@
+/*Card que contiene los ajustes de los textos*/
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.cardFontAdjustFather {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "adjustFont_1 adjustFont_2 adjustFont_3" "adjustFont_6 adjustFont_7 adjustFont_8" "adjustFont_size adjustFont_size adjustFont_size" "adjustPreview adjustPreview adjustPreview";
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 1550px) {
+    .cardFontAdjustFather {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "adjustFont_1 adjustFont_2" "adjustFont_3 adjustFont_6" "adjustFont_7 adjustFont_8" "adjustFont_size adjustFont_size" "adjustPreview adjustPreview";
+      gap: 10px;
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 530px) {
+    .cardFontAdjustFather {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas: "adjustFont_1 adjustFont_2 adjustFont_3" "adjustFont_6 adjustFont_7 adjustFont_8" "adjustFont_size adjustFont_size adjustFont_size" "adjustPreview adjustPreview adjustPreview";
+    }
+  }
+  
+  /*Card que contiene a los botones de forma individual*/
+  
+  .cardFontAdjustButton {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    height: 50px;
+  }
+  
+  .cardFontAdjustButtonSize {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    height: 50px;
+  }
+  
+  /*span que contiene la descripción de los botones*/
+  
+  .descAdjustButton {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+  }
+  
+  .iconAdjustButton {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .iconAdjustButtonSize {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+  }
+  
+  @media (max-width: 530px) {
+    .cardFontAdjustButton {
+      grid-template-columns: 1fr;
+      border-radius: 7px !important;
+    }
+  
+    .iconAdjustButton {
+      font-size: 27px;
+    }
+  
+    .descAdjustButton {
+      display: none;
+    }
+  }
+  
+  #adjustFont_1 {
+    grid-area: adjustFont_1;
+  }
+  
+  #adjustFont_2 {
+    grid-area: adjustFont_2;
+  }
+  
+  #adjustFont_3 {
+    grid-area: adjustFont_3;
+  }
+  
+  #adjustFont_size {
+    grid-area: adjustFont_size;
+  }
+  
+  #adjustFont_6 {
+    grid-area: adjustFont_6;
+  }
+  
+  #adjustFont_7 {
+    grid-area: adjustFont_7;
+  }
+  
+  #adjustFont_8 {
+    grid-area: adjustFont_8;
+  }
+  
+  #adjustPreview {
+    grid-area: adjustPreview;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .adjustPreviewTextContainer {
+    padding: 10px;
+  }
+  
+  /*Estilos de los textos modificables*/
+  i{
+    font-style: normal;
+  }
+  
+  .textWordHelp {
+    font-weight: 610;
+    background-color: #f1c2d3;
+    color: #5c454b;
+    border-radius: 3px;
+    padding: 0px 8px;
+  }
+
+  
+  .textBoldOwn {
+    font-weight: 700 !important;
+  }
+  
+  .textSpaceLineOwn {
+    line-height: 45px !important;
+  }
+  
+  .textAlignLeftOwn {
+    text-align: left !important;
+    display: inline-block;
+  }
+  
+  .textLineSubOwn {
+    text-decoration: underline !important;
+  }
+  
+  .textHighlightOwn {
+    background-color: #444444 !important;
+    color: #e7e7e7;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .textItalicOwn {
+    font-style: italic !important;
+  }
+  
+  .textoReadingH2, .textoDinamicoIdentificador {
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
+    display: inline-block;
+    transition: all .1 ease-in-out;
+    font-weight: 500;
+    margin: 0 0 20px 0 !important;
+  }
+  
+  .textoReadingH1 {
+    font-size: 25px;
+    text-align: justify;
+    display: inline-block;
+    transition: all .1 ease-in-out;
+  }
+  
+  .textoReadingH3 {
+    font-size: 19px;
+    text-align: justify;
+    display: inline-block;
+    transition: all .1 ease-in-out;
+  }
+  
+  @media (max-width: 1000px) {
+    .textoReadingH2, .textoDinamicoIdentificador {
+      font-size: 18px;
+      text-align: justify;
+    }
+  
+    .textoReadingH1 {
+      font-size: 21px;
+      text-align: justify;
+    }
+  
+    .textoReadingH3 {
+      font-size: 15px;
+      text-align: justify;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .textoReadingH2, .textoDinamicoIdentificador {
+      font-size: 16px;
+      text-align: justify;
+    }
+  
+    .textoReadingH1 {
+      font-size: 19px;
+      text-align: justify;
+    }
+  
+    .textoReadingH3 {
+      font-size: 13px;
+      text-align: justify;
+    }
+  }
+  

@@ -1,0 +1,210 @@
+// @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+.fullUnity {
+    display: grid;
+    grid-template-columns: .8fr 2fr;
+    grid-template-rows: auto;
+    transition: all .4s ease;
+  }
+  
+  .fullUnityComplete {
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+    grid-template-rows: auto;
+  }
+  
+  @media (max-width: 994px) {
+    .fullUnity {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 1fr;
+      transition: all .1s ease-in-out;
+    }
+  
+    .fullUnityComplete {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 1fr;
+    }
+  }
+  
+  /*Menu lateral*/
+  
+  .menuLateralWidthShow {
+    width: 100%;
+  }
+  
+  .menuLateralWidthHide {
+    width: 0%;
+  }
+  
+  .lateralUnityMenuBackOne {
+    height: 100vh;
+    transition: all .6s ease-in-out;
+  }
+  
+  .lateralUnityMenuBackTwo {
+    height: 100vh;
+    transition: all .5s ease-in-out;
+  }
+  
+  .lateralUnityMenuBackThree {
+    height: 100vh;
+    transition: all .4s ease-in-out;
+  }
+  
+  .lateralUnityMenuBackFour {
+    height: 100vh;
+    transition: all .3s ease-in-out;
+  }
+  
+  .lateralUnityMenu {
+    height: 100vh;
+    transition: all .2s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0px;
+  }
+  
+  @media (max-width: 994px) {
+    .lateralUnityMenuBackOne {
+      display: none;
+    }
+  }
+  
+  /*Menu lateral configuraciones de unidades*/
+  
+  .cardOpcionesMenuLateral {
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 19px 10px;
+  
+    i {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    p {
+      width: 100%;
+    }
+  }
+  
+  .buttonMenuMobile {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*Menu lateral opciones de cada sección*/
+  
+  .lateralUnityMenuSectionContainer {
+    overflow-y: scroll;
+    height: calc(100vh);
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+  }
+  
+  @media (min-width: 800px) {
+    .lateralUnityMenuSectionContainer {
+      &::-webkit-scrollbar-track {
+        background-color: rgb(41, 41, 41);
+      }
+  
+      &::-webkit-scrollbar {
+        width: 10px;
+        background-color: #F5F5F5;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: rgb(104, 104, 104);
+      }
+    }
+  }
+  
+  .mainSectionMenu {
+    margin: 0;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .secondarySectionMenu {
+    margin: 0 0 0 0;
+    height: 30px;
+    padding: 10px 5px 10px 20px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /*Menu de contenido*/
+  
+  .lateralUnityContentList {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 40px;
+    padding: 40px;
+    overflow-x: hidden;
+  }
+  
+  @media (max-width: 994px) {
+    .lateralUnityContentList {
+      gap: 20px;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .lateralUnityContentList {
+      gap: 10px;
+      padding: 10px;
+    }
+  }
+  
+  #lateralUnityContent {
+    overflow-y: scroll;
+    height: 100vh;
+  }
+  
+  @media (max-width: 1000px) {
+    #lateralUnityContent {
+      overflow-y: hidden;
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    #lateralUnityContent {
+      &::-webkit-scrollbar-track {
+        background-color: rgb(41, 41, 41);
+      }
+  
+      &::-webkit-scrollbar {
+        width: 10px;
+        background-color: #F5F5F5;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background-color: rgb(104, 104, 104);
+      }
+    }
+  }
+  

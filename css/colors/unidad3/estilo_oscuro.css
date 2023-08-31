@@ -1,0 +1,202 @@
+/*Colores de unidad 3*/
+.navUnit3 {
+    background-color: #996D99;
+}
+
+.nav-superiorUnit3 {
+    background-color: #272c31 !important;
+}
+
+.footerDesignUnit3 {
+    border-bottom: #745474 30px solid !important;
+}
+
+.leftBorderUnit3 {
+    border-left: #745474 10px solid !important;
+    transition: all .2s ease;
+    font-weight: 600;
+}
+
+.leftBorderSecondaryUnit3 {
+    border-left: #9b719b 10px solid !important;
+    transition: all .2s ease;
+}
+
+.leftBorderUnit3:hover,
+.leftBorderSecondaryUnit3:hover {
+    background-color: #272c31;
+    border-left: #4d394d 20px solid !important;
+}
+
+.activeLinkOptionsContentUnit3 {
+    background-color: #886388;
+    border-left: #5f455f 20px solid !important;
+    color: #fff;
+    font-weight: 600;
+}
+
+.leftBorderOnUnit3 {
+    border-left: #745474 10px solid !important;
+    background-color: rgb(209, 209, 209);
+    font-weight: 700;
+    transition: all .1s ease;
+}
+
+/*Algunos estilos para la pantalla de carga de los cuestionarios*/
+:root {
+	--hue: 223;
+	--bg: hsl(var(--hue),10%,90%);
+	--fg: hsl(var(--hue),10%,10%);
+	--primary: #4d394d;
+	--primary-l: #886388;
+	--primary-d: #886388;
+	--white: hsl(var(--hue),10%,100%);
+	--white-d: hsl(var(--hue),10%,45%);
+}
+
+/*Menu lateral de textos*/
+.leftBorderUnit3Menu{
+    border-bottom: #745474 70px solid !important;
+    overflow-x: hidden;
+}
+
+.activeButtonTextLateral{
+    border-left: 10px #9b719b solid;
+    background-color: #272c31;
+    border-radius: 5px;
+    transition: all .1s ease-in-out;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.lateralMenuAdjustTextTitle{
+    background-color: #745474;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    width: 350px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+}
+
+/*Menu lateral para las secciones de la unidad en modo mobile*/
+.containerSectionLateralMobileMenu{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.containerSectionLateralMobileMenu p{
+    padding: 10px 10px;
+    margin: 0 !important;
+    height: 40px !important;
+    font-weight: 600;
+    display: none;
+}
+
+.titleSectionMobileMenu{
+    height: 50px;
+    border-radius: 5px !important;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: auto;
+    cursor: pointer;
+}
+
+.titleSectionMobileMenu b{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titleSectionMobileMenu i{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleSectionMobileMenu{
+    border-radius: 5px !important;
+}
+
+.activeLinkOptionsContentUnit3Mobile{
+    background-color: #1c1f22;
+    border-left: #9b719b 10px solid !important;
+    color: #cecece;
+    font-weight: 600;
+}
+
+#barraPreguntas,
+#barraPreguntas2 {
+    background: rgb(153,109,153);
+    background: -moz-linear-gradient(90deg, rgba(153,109,153,1) 17%, rgba(116,84,116,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(153,109,153,1) 17%, rgba(116,84,116,1) 100%);
+    background: linear-gradient(90deg, rgba(153,109,153,1) 17%, rgba(116,84,116,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#996d99",endColorstr="#745474",GradientType=1); 
+    height: 20px;
+    border-radius: 5px;
+    width: 0px;
+    transition: all 0.1s ease-in-out;
+}
+
+/*Inputs modificacion del color*/
+/* Inactive/Active Default input field color */
+.input-field input[type]:not([readonly]),
+.input-field input[type]:focus:not([readonly]),
+.input-field textarea:not([readonly]),
+.input-field textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #745474;
+    box-shadow: 0 1px 0 0 #745474;
+}
+
+/* Inactive/Active Default input label color */
+.input-field input[type]:focus:not([readonly]) + label,
+.input-field textarea:focus:not([readonly]) + label {
+    color: #745474;
+}
+
+/* Active/Inactive Invalid input field colors */
+.input-field input[type].invalid,
+.input-field input[type].invalid:focus,
+.input-field textarea.invalid,
+.input-field textarea.invalid:focus {
+    border-bottom: 1px solid #745474;
+    box-shadow: 0 1px 0 0 #745474;
+}
+
+/* Active/Inactive Invalid input label color */
+.input-field input[type].invalid:focus + label,
+.input-field input[type].invalid ~ .helper-text::after,
+.input-field input[type].invalid:focus ~ .helper-text::after,
+.input-field textarea.invalid:focus + label,
+.input-field textarea.invalid ~ .helper-text::after,
+.input-field textarea.invalid:focus ~ .helper-text::after {
+    color: #745474;
+}
+
+/* Active/Inactive Valid input field color */
+.input-field input[type].valid,
+.input-field input[type].valid:focus,
+.input-field textarea.valid,
+.input-field textarea.valid:focus {
+    border-bottom: 1px solid #745474;
+    box-shadow: 0 1px 0 0 #745474;
+}
+
+/* Active/Inactive Valid input label color */
+.input-field input[type].valid:focus + label,
+.input-field input[type].valid ~ .helper-text::after,
+.input-field input[type].valid:focus ~ .helper-text::after,
+.input-field textarea.valid:focus + label,
+.input-field textarea.valid ~ .helper-text::after,
+.input-field textarea.valid:focus ~ .helper-text::after {
+    color: #745474;
+}

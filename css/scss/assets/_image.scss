@@ -1,0 +1,145 @@
+/*Imagen por defecto*/
+
+.defaultImage {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  
+  .defaultImageContent {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: initial;
+    background-size: contain;
+  }
+  
+  /*Rutas de los iconos*/
+  
+  #bienvenida {
+    background-image: url('../../icons/bienvenida.svg');
+  }
+  
+  #metodologia {
+    background-image: url('../../icons/metodologia.svg');
+  }
+  
+  #unidadCompetencia {
+    background-image: url('../../icons/unidadCompetencia.svg');
+  }
+  
+  #evaluacionAprendizajes {
+    background-image: url('../../icons/evaluacion.svg');
+  }
+  
+  #requerimientos {
+    background-image: url('../../icons/requerimientos.svg');
+  }
+  
+  #fuentes {
+    background-image: url('../../icons/fuentes.svg');
+  }
+  
+  #notFound {
+    background-image: url('../../icons/notFound.svg');
+  }
+
+  #intro {
+    background-image: url('../../icons/intro.svg');
+  }
+
+  #cierre {
+    background-image: url('../../icons/cierre.svg');
+  }
+
+  #empresa {
+    background-image: url('../../icons/empresa.svg');
+  }
+  
+  /*Referencia de los iconos*/
+  
+  .referenciaIcono {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*Formato de las imagenes con zoom*/
+  
+  .imagenDefaultContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    z-index: 99;
+  }
+  
+  .titleImageMine {
+    font-size: 18px;
+  }
+  
+  .noteImageMine {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 10px;
+  }
+  
+  .imageZoomedContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageZoomed {
+    width: 700px;
+  }
+  
+  @media (max-width: 1300px) {
+    .imageZoomed {
+      width: 500px;
+    }
+  
+    .titleImageMine, .noteImageMine {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .imageZoomed {
+      width: 400px;
+    }
+  
+    .titleImageMine, .noteImageMine {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .imageZoomed {
+      width: 300px;
+    }
+
+    .titleImageMine, .noteImageMine {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 300px) {
+    .imageZoomed {
+      width: 240px;
+    }
+
+    .titleImageMine, .noteImageMine {
+      font-size: 10px;
+    }
+  }
+  

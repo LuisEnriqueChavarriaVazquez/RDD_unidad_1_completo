@@ -1,0 +1,39 @@
+Actividades RDD 1
+
+[Listo] Copiar la bienvenida
+[Listo] Copiar la unidad de competencia
+[Listo] Copiar la metodología
+[Listo] Copiar la evaluación de los aprendizajes
+[Listo] Copiar los contactos
+[Listo] Requerimientos
+[Listo] Manual de usuario
+[Listo] Sección de contacto
+[Listo] Ajustar el encabezado de la pagina con el nombre de la asignatura
+[Listo] Ajustar el pie de pagina con los nuevos datos
+
+--------------------
+
+[Listo] Ajustar el menú para los escritorio
+[Listo] Sección de glosario
+[Listo] Sección de contenidos
+[Listo] Ajustar el menú para los dispositivos móviles
+[Listo] Agregar palabras del glosario
+[Listo] Referencias
+[Listo] Arreglar las flechas de retorno de las paginas, ya que no todas estan correctas
+[Listo] Cambiar colores base del sitio al rosa
+
+-------------------
+-------------------
+
+Unidad 4 
+
+[Listo] Ver porque en la pagina de unidad 4 no descarga las pruebas
+[Listo] Quitar la opción de app en android
+[Listo] Poner un mensaje con el siguiente texto antes de empezar la evaluación...
+
+------------------
+
+Polilibro
+
+[Listo] Quitar las descargas en android
+

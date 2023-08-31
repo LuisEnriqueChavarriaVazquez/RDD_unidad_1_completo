@@ -1,0 +1,617 @@
+/*Contenedor principal de la evaluacion*/
+
+.evaluationFatherContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .evaluationFatherContainer {
+    gap: 5px;
+    padding: 5px;
+  }
+}
+
+/*Titulo de la evaluacion*/
+
+.tituloEvaluacion {
+  padding: 20px 10px 10px 10px;
+}
+
+.notaStyle {
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  .tituloEvaluacion {
+    padding: 10px 10px 0 10px;
+  }
+
+  .notaStyle {
+    padding: 10px;
+  }
+}
+
+/*Contenedor para los contadores de la evaluacion*/
+
+.cardsEvaluation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 20px;
+  margin: 10px;
+}
+
+@media (max-width: 800px) {
+  .cardsEvaluation {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+.cardsEvaluationTwo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 20px;
+  margin: 10px;
+}
+
+@media (max-width: 800px) {
+  .cardsEvaluationTwo {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+.contenedorBarraProgreso {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.contenedorBarraProgresoTexto {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#contadorPreguntas,
+#contadorPreguntasRespondidas,
+#fechaActual,
+#tiempoActualHoras,
+#intentosActuales,
+#contadorPreguntas2,
+#contadorPreguntasRespondidas2,
+#fechaActual2,
+#tiempoActualHoras2,
+#intentosActuales2 {
+  padding: 0 0 0 10px;
+}
+
+.contenedorStats-level1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  padding: 25px;
+  margin: 10px;
+  gap: 10px;
+}
+
+@media (max-width: 800px) {
+  .contenedorStats-level1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 10px;
+    margin: 10px;
+    gap: 5;
+  }
+}
+
+@media (max-width: 600px) {
+  .contenedorStats-level1Small {
+    width: 90% !important;
+  }
+}
+
+.contenedorStats-level2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding: 10px;
+  gap: 10px;
+}
+
+.contenedorStats-level3 {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto;
+  gap: 10px;
+}
+
+@media (max-width: 800px) {
+  .contenedorStats-level2 {
+    gap: 5px;
+  }
+}
+
+.contenedorStats-level3 > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 28px;
+}
+
+.contenedorStats-level3 p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+@media (max-width: 800px) {
+  .contenedorStats-level3 p {
+    padding: 5px 0px;
+    font-size: 14px;
+  }
+
+  .contenedorStats-level3 > span {
+    height: 40px;
+    box-shadow: none !important;
+    border-radius: 5px !important;
+    padding: 6px;
+    font-size: 25px;
+  }
+}
+
+.contenedorStats-level3 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statsFixed {
+  position: fixed !important;
+  box-sizing: content-box;
+  z-index: 10000000;
+  bottom: 0;
+  left: 0;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 20px;
+  margin: 20px;
+  gap: 20px;
+
+  transition: all .4s ease-in-out;
+
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12),
+  0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .statsFixed {
+    top: 65px;
+    left: 0;
+    bottom: auto;
+  
+    grid-template-columns: 1fr;
+    padding: 5px;
+    margin: 5px;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .statsFixed {
+    top: 140px;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+}
+
+/*Contenedor para el boton de las descargas*/
+
+.cardsEvaluationDownload {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+@media (max-width: 800px) {
+  .cardsEvaluationDownload {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 10px;
+    margin: 0 10px;
+  }
+}
+
+//Button para la descarga pero en flotante
+.buttonMenuMobileDownloadResult{
+  position: fixed;
+  right: 20px;
+  bottom: 85px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Estilos para las preguntas de opt multiple*/
+
+.cardPregunta {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+  height: 100%;
+}
+
+/*Primera sección*/
+
+.titleQuestionContainer {
+  border-radius: 10px 10px 0 0;
+  padding: 20px 20px 0 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 0;
+}
+
+.titleQuestionContainerSecondary {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: auto;
+}
+
+@media (max-width: 800px) {
+  .titleQuestionContainerSecondary {
+    grid-template-columns: 1fr;
+  }
+}
+
+.titleQuestionContainerSecondary a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 5px;
+  margin: 5px 0 5px 5px;
+}
+
+@media (max-width: 800px) {
+  .titleQuestionContainerSecondary a {
+    display: none;
+  }
+}
+
+.preguntaIdentificador {
+  font-weight: 600;
+  padding: 10px;
+}
+
+.preguntaEnunciado {
+  font-weight: 400;
+  padding: 10px;
+  height: 140px;
+}
+
+/*Segunda seccion*/
+
+.optionsQuestionContainer {
+  min-height: 130px;
+  max-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 20px 10px 20px;
+}
+
+/*Tercera seccion*/
+
+.evaluateQuestionContainer {
+  height: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+.btnIndividualQuestion {
+  width: 100%;
+}
+
+/*Retroalimentacion de la pregunta*/
+
+.retroalimentacion {
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  font-size: 1.1rem;
+}
+
+.mensajeCorrecta {
+  padding: 10px;
+  color: #9cd6b2;
+  background-color: rgb(53, 82, 53);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+.mensajeIncorrecta {
+  padding: 10px;
+  color: #ffbcbc;
+  background-color: rgb(85, 36, 36);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+.mensajeNeutra {
+  padding: 10px;
+  color: #fff3bc;
+  background-color: rgb(66, 58, 28);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .mensajeCorrecta, .mensajeNeutra, .mensajeIncorrecta{
+    font-size: .8rem;
+  }
+}
+
+/*Barra de progreso*/
+
+.contenedorBarraProgresoShadow {
+  height: 20px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*Inputs eliminar estilos*/
+// input:not([type]),
+// input[type="text"],
+// input[type="password"],
+// input[type="email"],
+// input[type="url"],
+// input[type="time"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="tel"],
+// input[type="number"],
+// input[type="search"],
+// textarea.materialize-textarea {
+//   border: none !important;
+//   border-bottom: none !important;
+//   border-radius: 10px !important;
+//   outline: none;
+//   width: 100%;
+//   font-size: 1.4rem !important;
+//   font-weight: 500;
+//   margin: 0 0 20px 0;
+//   box-shadow: none !important;
+//   box-sizing: border-box !important;
+//   transition: all 0.3s;
+//   border-bottom: none;
+//   background-color: #ffffff !important;
+//   padding: 5px 10px !important;
+//   width: 100% !important;
+//   height: 50px !important;
+//   color: #363636;
+// }
+
+/*Buttons para el true y el false*/
+.optionsQuestionContainerTF {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  padding: 0px;
+}
+
+.optionsQuestionContainerTF div {
+  padding: 10px 10px;
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.buttonTrue {
+  border-radius: 10px 0 0 10px;
+}
+
+.buttonFalse {
+  border-radius: 0 10px 10px 0;
+}
+
+/*Contenedor de definiciones y conceptos*/
+.conceptsDefinitionContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  padding: 20px;
+  gap: 20px;
+}
+
+.conceptosCajaContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  height: auto;
+  gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  .conceptsDefinitionContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .conceptosCajaContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .conceptosCajaContainer {
+    grid-template-columns: 1fr;
+    gap: 0;
+    justify-items: center;
+    align-content: center;
+  }
+}
+
+.definicionCajaContainer {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+}
+
+.definicionCajaContainerFather {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  .definicionCajaContainer {
+    grid-template-rows: auto 1fr;
+    padding: 10px;
+  }
+
+  .definicionCajaContainerFather {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.conceptosCaja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 60px;
+  cursor: all-scroll;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .conceptosCaja {
+    height: 40px;
+    width: 85%;
+  }
+}
+
+.definicionCaja {
+  height: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+.definicionCaja p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .definicionCaja {
+    height: auto;
+    padding: 5px;
+  }
+
+  .definicionCaja p {
+    font-size: 15px;
+  }
+
+  .definicionCaja div {
+    padding: 5px;
+  }
+}
+
+.definicionCaja div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px;
+  width: 100%;
+}
+
+//Scroll reveal
+.lazy {
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+//Almacenamiento de los datos de los alumnos
+.contenedorDatosCuestionarioAlumno{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  padding: 15px;
+  margin: 0 10px;
+  gap: 0px;
+
+  .inputEvaluacionDatosAlumnosContainer{
+      margin: 10px;
+      padding: 15px;
+  }
+}
+
+.containerSaveDataUser{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+@media (max-width: 1000px) {
+  .contenedorDatosCuestionarioAlumno{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 0px;
+    margin: 20px 10px;
+    gap: 0px;
+  
+    .inputEvaluacionDatosAlumnosContainer{
+        margin: 10px;
+        padding: 5px 20px;
+    }
+  }
+}

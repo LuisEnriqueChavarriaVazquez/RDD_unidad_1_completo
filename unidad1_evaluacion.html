@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" id="generalDocument">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Unidad 1</title>
+    <link rel="shortcut icon" href="img/ipn.ico" type="image/x-icon">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/scss/addsOn/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/scss/styles.css">
+    <link rel="stylesheet" href="css/scss/addsOn/driver.min.css">
+    <link rel="stylesheet" href="css/loadingLongTime/loading.css">
+
+    <!--Colors-->
+    <link id="colorAdaptable" rel="stylesheet" href="css/colors/standarColors.css">
+    <link id="unitColorsAdaptable" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/jquery-ui.min.js"></script>
+    <script defer src="js/jquery.ui.touch-punch.min.js"></script>
+    <script defer src="js/materialize.min.js"></script>
+    <script defer src="js/activateComponentsMaterialize.js"></script>
+
+    <!--Componentes inyectables-->
+    <script defer src="js/components/header.js"></script>
+    <script defer src="js/components/footer.js"></script>
+
+    <!--Scripts propios-->
+    <script defer src="js/configuraciones/modoLuz.js"></script>
+    <script defer src="js/configuraciones/modoLectura.js"></script>
+    <script defer src="js/configuraciones/textSizerLateral.js"></script>
+    <script defer src="js/loading/loadingCuestionario.js"></script>
+    <!-- <script defer src="js/noCopy.js"></script> -->
+
+    <!--Scripts para la evaluacion-->
+    <script defer src="js/evaluacion/puntajeActual.js"></script>
+    <script src="js/evaluacion/mezclaArray.js"></script>
+    <script defer src="js/evaluacion/nombreGrupoAlumno.js"></script>
+    <script defer src="js/evaluacion/jspdf.min.js"></script>
+    <script defer src="js/evaluacion/fechaActual.js"></script>
+    <script defer src="js/evaluacion/validarCompletadoDeCuestionario.js"></script>
+    <script defer src="js/evaluacion/optMultiple.js"></script>
+    <script defer src="js/evaluacion/optTrueFalse.js"></script>
+    <script defer src="js/evaluacion/optDragAndDrop.js"></script>
+    <script defer src="js/evaluacion/intentosActuales.js"></script>
+    <script defer src="js/evaluacion/generadorPdfs.js"></script>
+    <script defer src="js/evaluacion/statsSticky.js"></script>
+    <script defer src="js/evaluacion/randomizeQuestionsDom.js"></script>
+    <script defer src="js/evaluacion/numeradorPreguntas.js"></script>
+    <script defer src="js/evaluacion/pruebaPdf.js"></script>
+
+    <!--Script para ir mostrando los elementos poco a poco-->
+    <script defer src="js/scrollReveal/scrollReveal.js"></script>
+    <script defer src="js/progressReading/progressReading.js"></script>
+
+    <!--Tutorial interactivo-->
+    <script defer src="js/driver.min.js"></script>
+    <script defer src="js/tutorialInteractiveEval.js"></script>
+
+
+</head>
+
+<body>
+
+    <!--Pantalla de carga para los cuestionarios en caso de que tarde mucho-->
+    <section id="bookLoading" class="clgreyl1">
+        <div class="book">
+            <div class="book__pg-shadow"></div>
+            <div class="book__pg"></div>
+            <div class="book__pg book__pg--2"></div>
+            <div class="book__pg book__pg--3"></div>
+            <div class="book__pg book__pg--4"></div>
+            <div class="book__pg book__pg--5"></div>
+        </div>
+        <div class="clbktx textoStandar clgreyl2 border1 textoDeCarga">Generando cuestionario</div>
+    </section>
+
+    <section>
+        <!--Navbar superior-->
+        <div class="nav-superior nav-superiorUnit1" id="nav-superior"></div>
+
+        <!--Navbar principal-->
+        <nav id="menuStickyUnity">
+            <div class="nav-wrapper navUnit1" id="menuIconUnity">
+                <a href="unidad1.html" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
+                        class="material-icons">arrow_back</i></a>
+                <a class="brand-logo titleUnity white-text">Unidad 1&nbsp;&nbsp;
+                    <span class="border1 textoStandar titleUnityColorUnit1">
+                        La Empresa y su entorno
+                    </span>
+                </a>
+            </div>
+        </nav>
+
+    </section>
+
+    <!--Barra de progreso de lectura-->
+    <div class="progress">
+        <div class="determinate" id="progressReading"></div>
+    </div>
+
+    <section class="evaluationFatherContainer clw">
+
+        <p class="textoTitulo clbktx tituloEvaluacion">Indicadores</p>
+
+        <!--Contador de preguntas-->
+        <section id="contenedorStatsIdentificador" class="contenedorStats-level1 clgreyl1 border1 shadow2">
+            <!--Primera sección de stats-->
+            <div class="contenedorStats-level2 clgreyl2 border1 shadow2">
+                <!--Puntaje-->
+                <div class="contenedorStats-level3">
+                    <span class="material-icons clw clbktx border4 shadow2" id="a1tutorialButton">scoreboard</span>
+                    <p class="contenedorBarraProgresoTexto textoStandar clbktx border1">Puntaje: <span
+                            id="contadorPreguntas">0</span>/20 puntos</p>
+                </div>
+                <!--Preguntas respondidas-->
+                <div class="contenedorStats-level3">
+                    <span class="material-icons clw clbktx border4 shadow2" id="a2tutorialButton">sports_score</span>
+                    <p class="contenedorBarraProgresoTexto textoStandar clbktx">Preguntas respondidas: <span
+                            id="contadorPreguntasRespondidas">0</span>/20</p>
+                </div>
+                <!--Barra de progreso-->
+                <div class="contenedorStats-level3" id="a3tutorialButton">
+                    <span class="material-icons clw clbktx border4 shadow2">percent</span>
+                    <div>
+                        <div class="contenedorBarraProgresoShadow clw">
+                            <div class="shadow2" id="barraPreguntas"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Segunda sección de stats-->
+            <div class="contenedorStats-level2 clgreyl2 border1 shadow2">
+                <!--Puntaje-->
+                <div class="contenedorStats-level3">
+                    <span class="material-icons clw clbktx border4 shadow2" id="a4tutorialButton">today</span>
+                    <p class="contenedorBarraProgresoTexto textoStandar clbktx">Fecha respuesta: <span
+                            id="fechaActual"></span></p>
+                </div>
+                <!--Preguntas respondidas-->
+                <div class="contenedorStats-level3">
+                    <span class="material-icons clw clbktx border4 shadow2" id="a5tutorialButton">schedule</span>
+                    <p class="contenedorBarraProgresoTexto textoStandar clbktx">Tiempo:
+                        <span id="tiempoActualHoras">00</span>:
+                        <span id="tiempoActualMinutos">00</span>':
+                        <span id="tiempoActualSegundos">00</span>''
+                    </p>
+                </div>
+                <!--Barra de progreso-->
+                <div class="contenedorStats-level3">
+                    <span class="material-icons clw clbktx border4 shadow2" id="a6tutorialButton">history</span>
+                    <p class="contenedorBarraProgresoTexto textoStandar clbktx">Intentos: <span
+                            id="intentosActuales"></span></p>
+                </div>
+            </div>
+        </section>
+
+        <!--------------------------------------------------->
+        <!--Contador de preguntas sticky-->
+        <section id="contenedorStatsIdentificadorFixed"
+            class="contenedorStats-level1 contenedorStats-level1Small clgreyl1 border1 shadow2 statsFixed scale-transition scale-out">
+            <!--Primera sección de stats-->
+            <div class="contenedorStats-level2 clgreyl2 border1 shadow2">
+                <!--Puntaje-->
+                <div class="contenedorStats-level3">
+                    <span class="material-icons clw clbktx border4 shadow2">scoreboard</span>
+                    <p class="contenedorBarraProgresoTexto textoStandar clbktx border1">Puntaje: <span
+                            id="contadorPreguntas2">0</span>/20 puntos</p>
+                </div>
+                <!--Preguntas respondidas-->
+                <div class="contenedorStats-level3">
+                    <span class="material-icons clw clbktx border4 shadow2">sports_score</span>
+                    <p class="contenedorBarraProgresoTexto textoStandar clbktx">Preguntas respondidas: <span
+                            id="contadorPreguntasRespondidas2">0</span>/20</p>
+                </div>
+                <!--Barra de progreso-->
+                <div class="contenedorStats-level3">
+                    <span class="material-icons clw clbktx border4 shadow2">percent</span>
+                    <div>
+                        <div class="contenedorBarraProgresoShadow clw">
+                            <div class="shadow2" id="barraPreguntas2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Segunda sección de stats-->
+            <div class="contenedorStats-level2 clgreyl2 border1 shadow2 hide-on-small-only">
+                <!--Puntaje-->
+                <div class="contenedorStats-level3">
+                    <span class="material-icons clw clbktx border4 shadow2">today</span>
+                    <p class="contenedorBarraProgresoTexto textoStandar clbktx">Fecha respuesta: <span
+                            id="fechaActual2"></span></p>
+                </div>
+                <!--Preguntas respondidas-->
+                <div class="contenedorStats-level3">
+                    <span class="material-icons clw clbktx border4 shadow2">schedule</span>
+                    <p class="contenedorBarraProgresoTexto textoStandar clbktx">Tiempo:
+                        <span id="tiempoActualHoras2">00</span>:
+                        <span id="tiempoActualMinutos2">00</span>':
+                        <span id="tiempoActualSegundos2">00</span>''
+                    </p>
+                </div>
+                <!--Barra de progreso-->
+                <div class="contenedorStats-level3">
+                    <span class="material-icons clw clbktx border4 shadow2">history</span>
+                    <p class="contenedorBarraProgresoTexto textoStandar clbktx">Intentos: <span
+                            id="intentosActuales2"></span></p>
+                </div>
+            </div>
+        </section>
+
+        <p class="textoTitulo clbktx tituloEvaluacion">Datos alumno</p>
+        <!--Seccion de formulario de datos-->
+        <section class="contenedorDatosCuestionarioAlumno clgreyl1 border1 shadow2">
+            <div class="inputEvaluacionDatosAlumnosContainer clw border1 shadow2">
+                <div class="input-field">
+                    <i class="material-icons prefix clbktx">account_circle</i>
+                    <input id="nombreAlumnoInput" type="text" class="validate active clbktx">
+                    <label for="nombreAlumnoInput" class="clbktx">Nombre (Empezando por apellidos)</label>
+                </div>
+            </div>
+            <div class="inputEvaluacionDatosAlumnosContainer clw border1 shadow2">
+                <div class="input-field">
+                    <i class="material-icons prefix clbktx">groups</i>
+                    <input id="grupoAlumnoInput" type="text" class="validate active clbktx">
+                    <label for="grupoAlumnoInput" class="clbktx">Grupo</label>
+                </div>
+            </div>
+        </section>
+        <section class="containerSaveDataUser clgreyl1 border1 shadow2">
+            <a class='btn-large waves-effect waves-light border1 white-text cl4' id="guardarDatos"></a>
+        </section>
+
+        <p class="textoTitulo clbktx tituloEvaluacion">Preguntas</p>
+        <!--Preguntas del cuestionario opcion multiple-->
+        <section class="cardsEvaluation clgreyl1 border1 shadow2" id="contenedor_preguntas"></section>
+        <section class="cardsEvaluationTwo clgreyl1 border1 shadow2" id="contenedor_preguntas_two"></section>
+
+        <!--Descarga de archivos-->
+        <section > <!--id="contenedorDescargaArchivos"-->
+            <p class="textoTitulo clbktx tituloEvaluacion">Descargar resultados</p>
+            <section class="cardsEvaluationDownload clgreyl1 border1">
+                <p class="notaStyle clgreyl2 border1 shadow2 clbktx textoStandar">Nota Android: Por respeto a su privacidad las
+                    descargas de PDFs de
+                    resultados en Android
+                    no son posibles, puesto que al ser generados del lado del cliente se solicitan permisos de
+                    lectura/escritura más alla de lo necesario. Favor de tomar captura de
+                    pantalla de sus resultados si es usuario de Android.</p>
+
+                <a class='btn-large waves-effect waves-light border1 white-text cl4 hide-on-med-and-down' id="documentoPrueba"
+                    unidadButton="u1">Descargar<i class="material-icons right">file_download</i></a>
+            </section>
+        </section>
+
+    </section>
+
+
+    <!--Botones para saber las estadísticas-->
+    <a data-target="mobile-demo"
+        class="border5 shadow2 white-text waves-effect waves-light buttonMenuMobile sidenav-trigger scale-transition scale-out nav-superiorUnit1"
+        style="width: 54px; height: 54px;" id="stats-button-exam">
+        <i class="material-icons" id="menuIconUnityContent">show_chart</i>
+    </a>
+
+    <a data-target="mobile-demo"
+        class="border5 shadow2 white-text waves-effect waves-light buttonMenuMobileDownloadResult scale-transition scale-out nav-superiorUnit1 hide-on-med-and-down"
+        style="width: 54px; height: 54px;" id="documentoPruebaFloat">
+        <i class="material-icons">download</i>
+    </a>
+
+    <!-- <a data-target="mobile-demo"
+        class="border5 shadow2 white-text waves-effect waves-light buttonMenuMobileDownloadResult nav-superiorUnit1"
+        style="width: 54px; height: 54px;" id="boton-captura-pantalla">
+        <i class="material-icons">camera</i>
+    </a> -->
+
+    <!--Inyectamos componente de footer-->
+    <section id="footerListener"></section>
+
+    <!--Boton de tutorial-->
+    <a class="waves-effect waves-light btn-large botonPolilibro border1 cl4 scale-transition" id="buttonComputerHelp"><i
+            class="material-icons left">help</i>Ayuda</a>
+
+</body>
+
+</html>

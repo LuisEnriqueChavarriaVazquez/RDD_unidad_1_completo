@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" id="generalDocument">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Polilibro</title>
+  <link rel="shortcut icon" href="img/ipn.ico" type="image/x-icon">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="css/scss/addsOn/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/scss/styles.css">
+  <link rel="stylesheet" href="css/scss/addsOn/driver.min.css">
+
+  <!--Colors-->
+  <link id="colorAdaptable" rel="stylesheet" href="css/colors/standarColors.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/materialize.min.js"></script>
+  <script defer src="js/activateComponentsMaterialize.js"></script>
+
+  <!--scripts en general-->
+  <script defer src="js/pushpin.js"></script>
+  <script defer src="js/progressReading/progressReading.js"></script>
+  <script defer src="js/loading/loadingManual.js"></script>
+
+
+  <!--Componentes inyectables-->
+  <script defer src="js/components/header.js"></script>
+  <script defer src="js/components/footer.js"></script>
+
+  <!--Scripts de configuraciones-->
+  <script defer src="js/configuraciones/modoLuz.js"></script>
+  <script defer src="js/configuraciones/modoLectura.js"></script>
+
+</head>
+
+<body>
+
+  <section>
+    <!--Navbar superior-->
+    <div class="nav-superior cl1" id="nav-superior"></div>
+    
+    <!--Navbar principal-->
+    <nav class="pushpin-demo-nav" style="box-shadow: none;">
+      <div class="nav-wrapper cl2">
+        <a href="unidad1.html" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
+            class="material-icons">arrow_back</i></a>
+      </div>
+    </nav>
+  </section>
+
+  <!--Barra de progreso de lectura-->
+  <div class="progress">
+    <div class="determinate" id="progressReading"></div>
+  </div>
+
+
+  <p id="titleSectionManual" class="textoTitulo navTitlteManualDefault cl2 white-text">Manual de usuario</p>
+
+  <section class="clgreyl1 containerManual readyContentScreen">
+    <!--Contenedor de contenidos-->
+    <section class="contentContainerManual">
+      <div class="clgreyl2 cardDesignFather shadow2 border1">
+
+        <!--Seccion del polilibro-->
+        <div id="section2" class="scrollspy cardDesignFullText clw shadow2 border1">
+          <p class="textoTituloFullText textoTitulo clbktx">Página de inicio</p>
+          <!--Card con un ejemplo-->
+          <div class="manualGridSections">
+            <div class="textoStandar cardDesignFullText border1 shadow2 clgreyl1 clbktx"><b class="clgreyl3 subTitleCard">Página
+                de
+                contenidos:</b> En la página de contenidos de cada unidad, podrás acceder no sólo a los contenidos,
+              gráficas, imágenes y textos de la página, sino que también podrás ver secciones como el material de apoyo,
+              la evaluación de la unidad y las referencias de los contenidos que encuentres en dicha unidad.
+
+              <!--Imagen-->
+              <div class="imagenDefaultContainer">
+                <p class="titleImageMine clbktx">Figura 1.1 Página de contenidos de la unidad</p>
+                <div class="imageZoomedContainer">
+                  <img class="materialboxed shadow2 border1 imageZoomed"
+                    data-caption="Página con todos los contenidos disponibles."
+                    src="img/manual/polilibro_unidad_contenidos.png">
+                </div>
+                <p class="noteImageMine clgreyl1 border1 clbktx">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).</p>
+              </div>
+
+            </div>
+            <div class="textoStandar cardDesignFullText border1 shadow2 clgreyl1 clbktx"><b
+                class="clgreyl3 subTitleCard">Accesibilidad
+                en los contenidos:</b> Para facilitar el uso de los contenidos, encontrarás una interfaz completamente
+              adaptable y un botón que incluye un pequeño tutorial interactivo en cada sección de contenidos. Además,
+              hay un botón en la esquina inferior derecha para ajustar los textos de forma dinámica, lo que te ayudará a
+              evitar la fatiga visual.
+            
+              <!--Imagen-->
+              <div class="imagenDefaultContainer">
+                <p class="titleImageMine clbktx">Figura 1.2 Ajuste de textos en la sección de contenidos </p>
+                <div class="imageZoomedContainer">
+                  <img class="materialboxed shadow2 border1 imageZoomed"
+                    data-caption="En esta foto se aprecia el menú lateral para ajustar textos."
+                    src="img/manual/polilibro_unidad_contenidos_desk_sidenav.png">
+                </div>
+                <p class="noteImageMine clgreyl1 border1 clbktx">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Seccion para la página de evaluacion-->
+        <div id="section3" class="scrollspy cardDesignFullText clw shadow2 border1">
+          <p class="textoTituloFullText textoTitulo clbktx">Evaluación de unidades</p>
+          <!--Card con un ejemplo-->
+          <div class="manualGridSections">
+            <div class="textoStandar cardDesignFullText border1 shadow2 clgreyl1 clbktx">
+              <p>La página de evaluación de nuestro sitio web es una herramienta interactiva que permite a los usuarios
+                evaluar su conocimiento sobre el contenido de
+                nuestras unidades de competencia. Esta página cuenta con diferentes tipos de preguntas, incluyendo
+                preguntas de opción múltiple, verdadero/falso y drag and drop para relacionar conceptos con sus
+                definiciones.</p>
+
+              <!--Imagen-->
+              <div class="imagenDefaultContainer">
+                <p class="titleImageMine clbktx">Figura 1.3 Sección de evaluación de la unidad </p>
+                <div class="imageZoomedContainer">
+                  <img class="materialboxed shadow2 border1 imageZoomed"
+                    data-caption="En esta foto se aprecia la sección de evaluación."
+                    src="img/manual/polilibro_evaluacion_desk.png">
+                </div>
+                <p class="noteImageMine clgreyl1 border1 clbktx">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).</p>
+              </div>
+              
+              <p>La interfaz gráfica de esta página proporciona una visión completa del progreso del cuestionario de
+                evaluación, lo que incluye información detallada sobre el puntaje obtenido, las preguntas respondidas,
+                la
+                barra de progreso del cuestionario, la fecha de respuesta, el tiempo dentro del cuestionario y el número
+                de intentos.</p>
+
+              <!--Imagen-->
+              <div class="imagenDefaultContainer">
+                <p class="titleImageMine clbktx">Figura 1.4 Estadísticas de los cuestionarios </p>
+                <div class="imageZoomedContainer">
+                  <img class="materialboxed shadow2 border1 imageZoomed"
+                    data-caption="Interfaz para ver las estadísticas del cuestionario."
+                    src="img/manual/Polilibro_evaluacion_desk_stats.png">
+                </div>
+                <p class="noteImageMine clgreyl1 border1 clbktx">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).</p>
+              </div>
+
+              <p>Una vez que se termina el cuestionario, se presenta un botón para descargar los resultados en formato
+                PDF.
+                Cabe mencionar que, en la versión de Android, este botón no funciona por motivos de seguridad del
+                cliente,
+                por lo que es necesario tomar una captura de pantalla de los resultados.</p>
+              
+              <!--Imagen-->
+              <div class="imagenDefaultContainer">
+                <p class="titleImageMine clbktx">Figura 1.5 Botón para las descargas de los resultados </p>
+                <div class="imageZoomedContainer">
+                  <img class="materialboxed shadow2 border1 imageZoomed"
+                    data-caption="Se puede ver el botón para descargar el PDF con los resultados."
+                    src="img/manual/descarga_resultados.png">
+                </div>
+                <p class="noteImageMine clgreyl1 border1 clbktx">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).</p>
+              </div>
+
+              <p>Cada vez que se responde una pregunta del cuestionario, se muestra una retroalimentación que indica si
+                la
+                respuesta es correcta o incorrecta, lo que ayuda al usuario a comprender mejor el contenido y a mejorar
+                su
+                aprendizaje. Dicha retroalimentación puede ser accedida también en el PDF al final del cuestionario.</p>
+
+              <!--Imagen-->
+              <div class="imagenDefaultContainer">
+                <p class="titleImageMine clbktx">Figura 1.6 Retroalimentación del cuestionario en formato PDF </p>
+                <div class="imageZoomedContainer">
+                  <img class="materialboxed shadow2 border1 imageZoomed"
+                    data-caption="Formato estandar de resultados y retroalimentación de los cuestionarios."
+                    src="img/manual/descarga_resultados_dos.png">
+                </div>
+                <p class="noteImageMine clgreyl1 border1 clbktx">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Seccion para la página de evaluacion-->
+        <div id="section4" class="scrollspy cardDesignFullText clw shadow2 border1">
+          <p class="textoTituloFullText textoTitulo clbktx">Página de configuración</p>
+          <!--Card con un ejemplo-->
+          <div class="manualGridSections">
+            <div class="textoStandar cardDesignFullText border1 shadow2 clgreyl1 clbktx">
+              <p>La página de configuración de nuestro sitio web ofrece diversas opciones para personalizar la
+                experiencia del usuario. En ella, es posible configurar el modo oscuro para reducir el brillo de la
+                pantalla en ambientes de poca luz, así como ajustar el modo de lectura en tonos sepia y brillo para una
+                lectura más cómoda.</p>
+              <p>Además, en la sección de contenidos, es posible ajustar el tamaño, grosor, inclinación, subrayado y
+                estilo de las fuentes para adaptar la presentación de los textos a las preferencias del usuario. De esta
+                forma, se busca garantizar una experiencia de navegación cómoda y personalizada para cada usuario.</p>
+
+              <!--Imagen-->
+              <div class="imagenDefaultContainer">
+                <p class="titleImageMine clbktx">Figura 1.7 Interfaz de configuraciones </p>
+                <div class="imageZoomedContainer">
+                  <img class="materialboxed shadow2 border1 imageZoomed"
+                    data-caption="Interfaz con todas las opciones de configuración."
+                    src="img/manual/configuracion_desk.png">
+                </div>
+                <p class="noteImageMine clgreyl1 border1 clbktx">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Seccion para la página de glosario-->
+        <div id="section5" class="scrollspy cardDesignFullText clw shadow2 border1">
+          <p class="textoTituloFullText textoTitulo clbktx">Página de glosario</p>
+          <!--Card con un ejemplo-->
+          <div class="manualGridSections">
+            <div class="textoStandar cardDesignFullText border1 shadow2 clgreyl1 clbktx">
+              <p>La página de glosario es una sección fundamental en cualquier sitio web de contenido educativo, y en su
+                caso, no es la excepción. Se trata de una recopilación de términos y definiciones que permiten al
+                usuario tener un acceso rápido y fácil a los conceptos fundamentales del área de estudio.</p>
+              <p>La página de glosario es especialmente útil para aquellos estudiantes que buscan repasar conceptos
+                específicos, ya que les permite buscar definiciones concretas a través de la barra de búsqueda. Además,
+                estudiar las definiciones de manera aislada puede ser una estrategia efectiva para el aprendizaje, ya
+                que ayuda a fijar de manera más clara y concreta el significado de cada término.</p>
+              <p>Por lo tanto, la página de glosario es una herramienta indispensable para cualquier usuario que desee
+                profundizar en el área de estudio, pues permite acceder a definiciones precisas y confiables, y estudiar
+                de manera efectiva los conceptos fundamentales.</p>
+
+              <!--Imagen-->
+              <div class="imagenDefaultContainer">
+                <p class="titleImageMine clbktx">Figura 1.8 Interfaz de glosario </p>
+                <div class="imageZoomedContainer">
+                  <img class="materialboxed shadow2 border1 imageZoomed"
+                    data-caption="Interfaz con el glosario y sus conceptos."
+                    src="img/manual/glosario_desk.png">
+                </div>
+                <p class="noteImageMine clgreyl1 border1 clbktx">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!--Seccion para la página de contacto-->
+        <div id="section6" class="scrollspy cardDesignFullText clw shadow2 border1">
+          <p class="textoTituloFullText textoTitulo clbktx">Página de contacto</p>
+          <!--Card con un ejemplo-->
+          <div class="manualGridSections">
+            <div class="textoStandar cardDesignFullText border1 shadow2 clgreyl1 clbktx">
+              <p>La página de contacto es una sección importante de nuestro sitio web, ya que permite a los usuarios
+                comunicarse directamente con los docentes del curso para hacer preguntas, compartir sugerencias o
+                solucionar problemas. En esta sección se proporciona la información de contacto de los docentes,
+                incluyendo su correo electrónico, para que los usuarios puedan comunicarse con ellos de manera fácil y
+                rápida.</p>
+
+              <!--Imagen-->
+              <div class="imagenDefaultContainer">
+                <p class="titleImageMine clbktx">Figura 1.9 Página de contacto </p>
+                <div class="imageZoomedContainer">
+                  <img class="materialboxed shadow2 border1 imageZoomed"
+                    data-caption="Interfaz con la fotografía y datos de los docentes."
+                    src="img/manual/contacto_desk.png">
+                </div>
+                <p class="noteImageMine clgreyl1 border1 clbktx">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023).</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <!--Contenedor de menu de contenidos-->
+    <div class="sectionPanelManualContainer">
+      <ul class="section table-of-contents tabsFixed sectionPanelManual" id="scrollSpyContainer">
+        <li><a href="#section2" class="textoStandar">Página de inicio</a></li>
+        <li><a href="#section3" class="textoStandar">Pagina de evaluación</a></li>
+        <li><a href="#section4" class="textoStandar">Página de configuración</a></li>
+        <li><a href="#section5" class="textoStandar">Página de glosario</a></li>
+        <li><a href="#section6" class="textoStandar">Página de contacto</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!--Contenido de carga de la página-->
+  <section class="loadContentScreen"></section>
+
+  <a href="pdf/Manual de usuario.pdf" download="" data-target="slide-out"
+    class="border5 shadow2 white-text waves-effect waves-light cl5 buttonMenuMobile sidenav-trigger"><i
+      class="material-icons">download</i></a>
+
+
+  <!--Inyectamos componente de footer-->
+  <section id="footerListener"></section>
+
+
+
+</body>
+
+</html>

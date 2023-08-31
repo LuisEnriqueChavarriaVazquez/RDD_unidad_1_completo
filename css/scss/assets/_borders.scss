@@ -1,0 +1,28 @@
+//Borders
+.border0 {
+	border-radius: 5px;
+}
+.border1 {
+	border-radius: 10px;
+}
+.border2 {
+	border-radius: 15px;
+}
+.border3 {
+	border-radius: 25px;
+}
+.border4 {
+	border-radius: 50px;
+}
+.border5 {
+	border-radius: 100px;
+}
+
+/*Borde espcial para las cards de contenido*/
+.border1Inf {
+	border-radius: 0 0 10px 10px;
+}
+
+.border1Sup {
+	border-radius: 10px 10px 0 0;
+}

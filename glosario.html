@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" id="generalDocument">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Glosario</title>
+    <link rel="shortcut icon" href="img/ipn.ico" type="image/x-icon">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/scss/addsOn/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/scss/styles.css">
+    <link rel="stylesheet" href="css/scss/addsOn/driver.min.css">
+
+    <!--Colors-->
+    <link id="colorAdaptable" rel="stylesheet" href="css/colors/standarColors.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script defer src="js/jquery.min.js"></script>
+    <script defer src="js/materialize.min.js"></script>
+    <script defer src="js/activateComponentsMaterialize.js"></script>
+
+    <!--Componentes inyectables-->
+    <script defer src="js/components/header.js"></script>
+    <script defer src="js/components/footer.js"></script>
+
+    <!--Scripts propios-->
+    <script defer src="js/configuraciones/modoLuz.js"></script>
+    <script defer src="js/configuraciones/modoLectura.js"></script>
+    <script defer src="js/loading/loadingGlosario.js"></script>
+    <script defer src="js/browserStyle.js"></script>
+    <script defer src="js/buscador.js"></script>
+    <script defer src="js/noCopy.js"></script>
+
+</head>
+
+<body class="filterSepia">
+
+    <section>
+        <!--Navbar superior-->
+        <div class="nav-superior cl1" id="nav-superior"></div>
+        <!--Navbar principal-->
+        <nav>
+            <div class="nav-wrapper cl2">
+                <a href="unidad1.html" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
+                        class="material-icons">arrow_back</i></a>
+                <a class="brand-logo titleUnity">Glosario</a>
+            </div>
+        </nav>
+    </section>
+
+    <section class="browserContainer col s12 clw">
+        <div class="browserContainer-inputContainer" id="browserContainer-inputContainer">
+            <div id="buttonBrowser"
+                class="buttonBrowserOwn waves-effect waves-light white-text material-icons cl5 shadow2">
+                search</div>
+            <input id="inputBrowser" type="text" onkeyup="buscar_concepto()"
+                class="browserContainer-inputContainer-input browser-default shadow2 clgreyl1 clbktx">
+        </div>
+
+        <div class="browserContainer-conceptsContainer readyContentScreen" id="parentConceptsGlosario">
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Accionistas</p>
+                <p class="textoStandar clbktx">Los dueños de una corporación cuya propiedad o patrimonio se demuestra con acciones comunes o preferentes (Gitman y Zutter, 2012).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Capital social</p>
+                <p class="textoStandar clbktx">Es el conjunto de bienes propios, del ente social constituido por el valor inicial en dinero de las aportaciones de los accionistas que lo forman, en el momento de la constitución de la sociedad. El valor permanece inmutable durante la vida de la sociedad, salvo los aumentos y disminuciones acordados por los socios (Quintana, 2001).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Contraloría</p>
+                <p class="textoStandar clbktx">El contralor (jefe de contabilidad) maneja normalmente las actividades contables, como la contabilidad corporativa, la administración fiscal, la contabilidad financiera y la contabilidad de costos (Gitman y Zutter, 2012).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Denominación de la sociedad mercantil</p>
+                <p class="textoStandar clbktx">Nombre de algunas de estas sociedades (como la anónima, por ejemplo) en el que no figura el de ninguno de sus socios. La denominación social puede formarse libremente, siempre que no dé lugar a confusiones con las empleadas por otras sociedades. En todo caso deberá indicarse, junto a la denominación de la sociedad, el tipo social adoptado (de Pina y de Pina Vara, 2005).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Empresa</p>
+                <p class="textoStandar clbktx">Grupo social en el que, a través del capital, el trabajo y la administración, se producen o distribuyen bienes y servicios con fines lucrativos, o sin ellos, y tendientes a la satisfacción de diversas necesidades de la comunidad (Münch, 2020).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Especulación</p>
+                <ol  class="textoStandar clbktx">
+                    <li>(Del latín speculatio, de speculari, observar). Operación comercial que se practica con ánimo de lucro.</li>
+                    <li>Se refiere a todas las actividades sobre mercaderías, títulos de crédito, o inmuebles cuyo fin primordial es el de obtener un lucro, bien sea por la reventa o por la explotación que se haga de los mismos (Quintana, 2001).</li>
+                </ol>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Ética en los negocios</p>
+                <p class="textoStandar clbktx">Normas de conducta o juicio moral que se aplican a los individuos que participan en el comercio (Gitman y Zutter, 2012).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Finanzas</p>
+                <p class="textoStandar clbktx">El arte y la ciencia de administrar el dinero. En el contexto de una empresa, las finanzas implican el mismo tipo de decisiones: cómo incrementar el dinero de los inversionistas, cómo invertir el dinero para obtener una utilidad, y de qué modo conviene reinvertir las ganancias de la empresa o distribuirlas entre los inversionistas (Gitman y Zutter, 2012).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Objeto social</p>
+                <p class="textoStandar clbktx">Se trata de concretar qué actividades va a realizar la empresa, bien inmediatamente o en el futuro, y es un punto que si no se detalla correctamente puede impedir su inscripción en el Registro Mercantil. Generalmente se establece un objeto social bastante amplio. Hay que tener en cuenta que cualquier modificación estatutaria requiere el acuerdo de la Junta, la elevación a escritura pública de ese acuerdo y la inscripción en el Registro Mercantil, por lo que habitualmente el objeto social no sólo incluye las actividades principales que se van a llevar a cabo, sino que también contiene otras accesorias que podrían interesar en el futuro (BBVA, s.f).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Persona física</p>
+                <p class="textoStandar clbktx">
+                    De acuerdo con el Servicio de Administración Tributaria (SAT, s.f) una persona física es un individuo que realiza cualquier actividad económica (vendedor, comerciante, empleado, profesionista, etc.), el cual tiene derechos y obligaciones. Los regímenes para las Personas Físicas se clasifican de acuerdo con sus actividades e ingresos y son:
+                </p>    
+                    <ol class="textoStandar clbktx" style="list-style: inside;">
+                        <li>Régimen simplificado de confianza</li>
+                        <li>Sueldos y salarios e ingresos asimilados a salarios</li>
+                        <li>Régimen de actividades empresariales y profesionales</li>
+                        <li>Régimen de incorporación fiscal (RIF)</li>
+                        <li>Enajenación de bienes</li>
+                        <li>Régimen de actividades empresariales con ingresos a través de plataformas tecnológicas</li>
+                        <li>Régimen de arrendamiento</li>
+                        <li>Intereses</li>
+                        <li>Obtención de premios</li>
+                        <li>Dividendos</li>
+                        <li>Demás ingresos</li>
+                    </ol>
+
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Persona moral</p>
+                <p class="textoStandar clbktx">Es el conjunto de personas físicas, que se unen para la realización de un fin colectivo, son entes creados por el derecho, no tienen una realidad material o corporal (no se pueden tocar como tal, como en el caso de una persona física), sin embargo, la ley les otorga capacidad jurídica para tener derechos y obligaciones (SAT, s.f).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Producto</p>
+                <p class="textoStandar clbktx">Un producto es algo que puede ser ofrecido a un mercado para su atención, adquisición, uso o consumo, y que podría satisfacer un deseo o una necesidad. Los productos incluyen más que sólo los objetos tangibles como automóviles, computadoras o teléfonos celulares. En una definición más amplia, entre los productos también se incluyen servicios, eventos, lugares, organizaciones, ideas o una mezcla de éstos (Kotler y Armstrong, 2013).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Razón social</p>
+                <p class="textoStandar clbktx">Nombre de la sociedad mercantil formado con el de uno de sus socios, con el de algunos de ellos o con el de todos (de Pina y de Pina Vara, 2005).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Servicios</p>
+                <p class="textoStandar clbktx">Debido a su importancia en la economía mundial, se da especial atención a los servicios. Los servicios son una forma de producto que consiste en actividades, beneficios o satisfacciones que se ofrecen a la venta, que son esencialmente intangibles y que no dan como resultado la propiedad de algo. Algunos ejemplos son la banca, servicios hoteleros, viajes de aerolínea, comunicación inalámbrica y servicios de reparación del hogar (Kotler y Armstrong, 2013).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Sociedad</p>
+                <p class="textoStandar clbktx">Empresa que tiene dos o más dueños y que opera con fines de lucro (Gitman y Zutter, 2012).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Tesorería</p>
+                <p class="textoStandar clbktx">El tesorero (gerente financiero) por lo general administra el efectivo de la empresa, los fondos de inversión del superávit, cuando existe, y garantiza el financiamiento externo cuando es necesario. El tesorero también supervisa los planes de pensión de la empresa y administra riesgos críticos relacionados con cambio de divisas, tasas de interés y precios de materias primas (Gitman y Zutter, 2012).</p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2">
+                <p class="textoTitulo clbktx">Mercado</p>
+                <p class="textoStandar clbktx">
+                    Desde la perspectiva del marketing, un mercado es el conjunto de todos los compradores reales y potenciales de un producto o servicio. Estos compradores comparten una necesidad o deseo particular que puede ser satisfecho a través de relaciones de intercambio (Kotler y Armstrong, 2013).
+                    <br><br>
+                    Se refiere a todos los elementos que influyen en la realización de las transacciones de bienes y servicios, y está conformado por la oferta y la demanda del producto (Münch, 2020).
+                </p>
+            </div>
+            <div class="conceptCard clgreyl1 shadow3 border2" id="noResultContent" style="display: none;">
+                <p class="textoTitulo clbktx">No hay resultados</p>
+                <div class="defaultImage">
+                    <div class="defaultImageContent" id="notFound"></div>
+                </div>
+                <span class="referenciaIcono clgreyl1 border1 clbktx">Ilustración de &nbsp; <a
+                        href="https://icons8.com/illustrations/style--pixeltrue">Pixel true</a> &nbsp;, &nbsp; <a
+                        href="https://icons8.com/illustrations/">Ouch!</a></span>
+            </div>
+        </div>
+
+        <!--Contenido de carga de la página-->
+        <section class="loadContentScreen"></section>
+
+    </section>
+
+    <!--Inyectamos componente de footer-->
+    <section id="footerListener"></section>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+//Colores
+.barraGraficaStats1 {
+    background: rgb(124, 177, 152);
+    background: -moz-linear-gradient(90deg, rgba(124, 177, 152, 1) 17%, rgba(85, 112, 99, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(124, 177, 152, 1) 17%, rgba(85, 112, 99, 1) 100%);
+    background: linear-gradient(90deg, rgba(124, 177, 152, 1) 17%, rgba(85, 112, 99, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7cb198",endColorstr="#557063",GradientType=1);
+}
+
+.barraGraficaStats2 {
+    background: rgb(160, 104, 110);
+    background: -moz-linear-gradient(90deg, rgba(160, 104, 110, 1) 17%, rgba(128, 84, 88, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(160, 104, 110, 1) 17%, rgba(128, 84, 88, 1) 100%);
+    background: linear-gradient(90deg, rgba(160, 104, 110, 1) 17%, rgba(128, 84, 88, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a0686e",endColorstr="#805458",GradientType=1);
+}
+
+.barraGraficaStats3 {
+    background: rgb(153, 109, 153);
+    background: -moz-linear-gradient(90deg, rgba(153, 109, 153, 1) 17%, rgba(116, 84, 116, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(153, 109, 153, 1) 17%, rgba(116, 84, 116, 1) 100%);
+    background: linear-gradient(90deg, rgba(153, 109, 153, 1) 17%, rgba(116, 84, 116, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#996d99",endColorstr="#745474",GradientType=1);
+}
+
+.barraGraficaStats4 {
+    background: rgb(214, 124, 114);
+    background: -moz-linear-gradient(90deg, rgba(214, 124, 114, 1) 17%, rgba(172, 101, 93, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(214, 124, 114, 1) 17%, rgba(172, 101, 93, 1) 100%);
+    background: linear-gradient(90deg, rgba(214, 124, 114, 1) 17%, rgba(172, 101, 93, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d67c72",endColorstr="#ac655d",GradientType=1);
+}
+
+.barraGraficaStats5 {
+    background: rgb(146, 166, 233);
+    background: -moz-linear-gradient(90deg, rgba(146, 166, 233, 1) 17%, rgba(126, 136, 168, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(146, 166, 233, 1) 17%, rgba(126, 136, 168, 1) 100%);
+    background: linear-gradient(90deg, rgba(146, 166, 233, 1) 17%, rgba(126, 136, 168, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#92a6e9",endColorstr="#7e88a8",GradientType=1);
+}
+
+//Contenedor padre de la grafica y datos generales
+.contenedorDatos_padre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 15px;
+
+    //Contenedor general de datos
+    .contenedorDatos_general {
+        display: grid;
+        grid-template-columns: 0.9fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "general_1 general_2 general_3"
+            "general_1 general_4 general_5";
+        gap: 15px;
+        padding: 60px 300px 0 300px;
+
+        @media (max-width: 1600px) {
+            & {
+                grid-template-areas:
+                    "general_1 general_2 general_3"
+                    "general_1 general_4 general_5";
+                padding: 25px 25px 0 25px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            & {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    "general_1 general_1"
+                    "general_2 general_3"
+                    "general_4 general_5";
+                padding: 30px 20px 0 20px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            & {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas:
+                    "general_1 general_1 general_1"
+                    "general_2 general_2 general_2"
+                    "general_3 general_3 general_3"
+                    "general_4 general_4 general_4"
+                    "general_5 general_5 general_5";
+                padding: 30px 10px 0 10px;
+                gap: 10px;
+            }
+        }
+
+        .generalCardData {
+            padding: 20px;
+            box-sizing: content-box;
+        }
+
+        #general_1 {
+            grid-area: general_1;
+            height: auto;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 0;
+
+            .generalCardData_son {
+                padding: 0;
+                font-weight: 700;
+                display: grid;
+                grid-template-columns: 0.1fr 1fr;
+                grid-template-rows: auto;
+
+                .generalCardData_son1,
+                .generalCardData_son2 {
+                    height: 100%;
+                    width: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2px 30px;
+                }
+
+                .generalCardData_son2 {
+                    border-radius: 0 10px 10px 0;
+                }
+            }
+        }
+
+        #general_2 {
+            grid-area: general_2;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            height: auto;
+        }
+
+        #general_3 {
+            grid-area: general_3;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            height: auto;
+        }
+
+        #general_4 {
+            grid-area: general_4;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            height: auto;
+        }
+
+        #general_5 {
+            grid-area: general_5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            height: auto;
+        }
+    }
+
+    //Contenedor de graficas
+    .contenedorDatos_graficas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "grafica_1 grafica_1";
+        gap: 15px;
+        padding: 0 300px 60px 300px;
+        height: auto;
+
+        @media (max-width: 1600px) {
+            & {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "grafica_1";
+                padding: 15px 25px 0 25px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            & {
+                padding: 10px 20px 0 20px;
+            }
+        }
+
+        @media (max-width: 800px) {
+            & {
+                padding: 10px 10px 0 10px;
+            }
+        }
+
+        .graficaCardData {
+            padding: 20px;
+            box-sizing: content-box;
+        }
+
+        #grafica_1 {
+            grid-area: grafica_1;
+            height: auto;
+        }
+    }
+}
+
+//Estilos para las graficas de barras.
+.contenedorGraficaMain {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    padding: 35px 35px 35px 35px;
+
+    .plano {
+        width: 100%;
+        height: 100%;
+        border-left: 3px solid #b6b6b6;
+        border-bottom: 3px solid #b6b6b6;
+
+        .verticalPlano {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 380px - 70px;
+
+            .v-backgroundPlano {
+                height: auto;
+                width: 100%;
+                padding-bottom: 5px;
+                border: 1px #b6b6b6 solid;
+
+                div {
+                    display: flex;
+                    justify-content: right;
+                    align-items: flex-end;
+
+                    height: 110%;
+                    position: relative;
+                    left: 5px;
+
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .horizontalPlano {
+            display: grid;
+            grid-template-rows: repeat(5, 380px/5px);
+            grid-template-columns: 1fr;
+            position: relative;
+            top: -310px;
+
+            .h-backgroundPlano {
+                //380-35-20 == 325
+                height: calc(310px / 5);
+                width: 100%;
+                border: 1px #b6b6b6 solid;
+
+                div{
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+
+                    height: 100%;
+                    position: relative;
+                    right: 30px;
+
+                    font-size: 1rem;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .containerBarras {
+            display: grid;
+            grid-template-rows: repeat(5, 380px/5px);
+            grid-template-columns: 1fr;
+            position: relative;
+            top: -620px;
+
+            .h-containerBarras {
+                //380-35-20 == 325
+                height: calc(310px / 5);
+                width: 100%;
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                div{
+                    width: 1px;
+                    height: 55%;
+                    border-radius: 0 8px 8px 0;
+                }
+            }
+        }
+    }
+}
+

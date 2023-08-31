@@ -1,0 +1,56 @@
+/*En esta hoja tenemos los estilos para enlazar a algún recurso en contenidos*/
+.linkToResourceContainer{        
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 40px;
+    gap: 10px;
+
+    transition: all .1s ease;
+}
+
+.linkToResourceContainer:hover{
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12),
+        0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.linkToResourceContainer_title{
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px 10px 0 0;
+
+    @media (max-width: 600px) {
+        &{
+            font-size: 16px;
+        }
+    }
+}
+
+.linkToResourceContainer_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    border-radius: 0 0 10px 10px;
+
+    span{
+        font-size: 30px;
+        font-weight: 500;
+
+        @media (max-width: 600px) {
+            &{
+                font-size: 25px;
+            }
+        }
+          
+    }
+}

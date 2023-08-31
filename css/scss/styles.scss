@@ -1,0 +1,60 @@
+
+//Variables
+@use "variables/_variables.scss";
+
+//Assets generales
+@use "assets/_textCustomized.scss";
+@use "assets/_borders.scss";
+@use "assets/_buttons.scss";
+@use "assets/_cards.scss";
+@use "assets/_image.scss";
+@use "assets/_menuLateralCustomized.scss";
+@use "assets/_menuLateralTextAdjust.scss";
+@use "assets/_navCustomized.scss";
+@use "assets/_scrollBarCustomized.scss";
+@use "assets/_shadowCustomized.scss";
+@use "assets/_tabsCustomized.scss";
+@use "assets/_footer.scss";
+@use "assets/_shimmer.scss";
+@use "assets/_phoneSlider.scss";
+@use "assets/_readingProgress.scss";
+@use "assets/_pushPin.scss";
+@use "assets/_actividadesAprendizaje.scss";
+@use "assets/_error.scss";
+@use "assets/_tablaStyles.scss";
+@use "assets/_collapsible.scss";
+@use "assets/_imageZoomed.scss";
+@use "assets/_linkToResource.scss";
+
+
+//Pages
+@use "pages/_config.scss";
+@use "pages/_contact.scss";
+@use "pages/_evaluacion.scss";
+@use "pages/_glosario.scss";
+@use "pages/_manual.scss";
+@use "pages/_analitica.scss";
+@use "pages/referencia";
+
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+//Pagina default
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background: #d3d3d3;
+    color: #000000;
+}

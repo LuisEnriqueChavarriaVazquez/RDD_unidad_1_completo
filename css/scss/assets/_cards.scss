@@ -1,0 +1,200 @@
+//Diseño de la card base
+.cardDesign {
+	width: 100%;
+	height: auto;
+	padding: 20px 30px;
+}
+
+
+@media (min-width: 768px) {
+	.cardDesign{
+        padding: 20px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .cardDesign{
+        padding: 15px !important;
+    }
+}
+
+//Diseño de la card para cuando tenemos exceso de texto
+.cardDesignFullText {
+	width: 100%;
+	height: auto;
+	padding: 20px 30px;
+}
+
+@media (min-width: 768px) {
+	.cardDesignFullText{
+        padding: 20px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .cardDesignFullText{
+        padding: 10px !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .cardDesignFullText{
+        padding: 10px 6px !important;
+    }
+}
+
+//Contenedor de las cards
+.cardDesignFather {
+	width: 100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	padding: 20px 30px;
+	gap: 20px;
+}
+
+@media (max-width: 800px) {
+    .cardDesignFather{
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cardDesignFather{
+        padding: 10px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cardDesignFather{
+        padding: 5px;
+        gap: 10px;
+    }
+}
+
+//Cards de las unidades (Seccion del polilibro)
+.unitCardsContainerFather {
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.unitCardsContainer {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: 30px;
+	padding: 30px 150px;
+	width: 100%;
+	height: auto;
+}
+.cardUnit {
+	height: 160px;
+	padding: 25px 20px 20px 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	transition: all .2s ease;
+	cursor: pointer;
+}
+.linkContainer {
+	width: 100%;
+	height: auto;
+}
+#a1 {
+	border-bottom: 20px #7ea793 solid;
+	&:hover {
+		padding: 10px 20px 20px 20px;
+		border-bottom: 40px #335546 solid;
+	}
+}
+#a2 {
+	border-bottom: 20px #b87c82 solid;
+	&:hover {
+		padding: 10px 20px 20px 20px;
+		border-bottom: 40px #643f42 solid;
+	}
+}
+#a3 {
+	border-bottom: 20px #9b719b solid;
+	&:hover {
+		padding: 10px 20px 20px 20px;
+		border-bottom: 40px #5f405f solid;
+	}
+}
+#a4 {
+	border-bottom: 20px #da7e74 solid;
+	&:hover {
+		padding: 10px 20px 20px 20px;
+		border-bottom: 40px #854e48 solid;
+	}
+}
+#a5 {
+	border-bottom: 20px #b5c1eb solid;
+	&:hover {
+		padding: 10px 20px 20px 20px;
+		border-bottom: 40px #2c344d solid;
+	}
+}
+
+@media (max-width: 1200px) {
+	.unitCardsContainer{
+        gap: 20px;
+        padding: 20px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .unitCardsContainer{
+        gap: 20px;
+        padding: 15px 20px 20px 20px;
+    }
+
+    .cardUnit{
+        height: 130px;
+        padding: 20px;
+        padding: 25px 20px 20px 20px;
+    }
+
+    .tituloSeleccionUnidades{
+        width: calc(100% - 50px);
+    }
+    
+}
+
+
+/*container de cards*/
+.cardDesign_container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	gap: 20px;
+
+	@media (max-width: 1200px) {
+		&{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto;
+			gap: 10px;
+		}
+	}
+}
+
+//card desgin para cuando es una card principal
+
+.titleContainer{
+	padding: 10px 15px;
+	margin: 0;
+}
+
+.cardMainContainerTitle{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}

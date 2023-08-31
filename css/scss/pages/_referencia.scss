@@ -1,0 +1,54 @@
+  /* Para mostrar la portada de los libros */
+  .book-reference {
+    position: relative;
+    left: 230px;
+
+    width: 80%;
+    box-sizing: border-box;
+    padding: 5px 10px;
+  }
+  
+  .book-reference .book-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left:-230px;
+    width: 210px;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .book-reference:hover .book-cover {
+    display: block;
+  }
+
+  @media (max-width: 1500px) {
+    .book-reference {
+      left: 120px;
+    }
+    
+    .book-reference .book-cover {
+      left:-120px;
+      width: 110px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .book-reference {
+      left: 0;
+      width: 100%;
+    }
+    
+    .book-reference .book-cover {
+      left: 0px;
+      top: 0px;
+      width: 150px;
+      z-index: 1000;
+    }
+  }

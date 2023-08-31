@@ -1,0 +1,81 @@
+.contactContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 50px 150px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 1300px) {
+    .contactContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+      padding: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+  
+  @media (max-width: 780px) {
+    .contactContainer {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 0;
+    }
+  }
+  
+  .contactTeacher {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+  
+    &:hover {
+      color: #000;
+      box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .contactPhoto {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+  }
+  
+  .dataContainerContact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px 20px 15px 20px;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .contactName {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  .contactInspired{
+    height: 100px;
+    font-weight: 600;
+  }
+  
+  .contactMail {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    width: 100%;
+  }
+  
