@@ -21,7 +21,7 @@ const contenidosUnidad = [
             <p class="clbktx textoDinamicoIdentificador textoReadingH2">
             Estimados alumnos y alumnas que cursan la unidad de aprendizaje Finanzas empresariales, que se imparte en la
             <i class="keyWord">Escuela Superior de Cómputo (ESCOM) del Instituto Politécnico Nacional (IPN)</i>, reciban la mejor de las
-            bienvenidas a este este <i class="keyWord">recurso didáctico digital (RDD) de la unidad temática 1: la empresa y su entorno</i>,
+            bienvenidas a este <i class="keyWord">recurso didáctico digital (RDD) de la unidad temática 1: la empresa y su entorno</i>,
             correspondiente a la unidad de aprendizaje Finanzas empresariales.
             Este recurso educativo se construyó con la finalidad de apoyarlos en su proceso de aprendizaje de la unidad
             en cuestión, esperamos que les sea de gran ayuda.
