@@ -355,7 +355,7 @@ const contenidosUnidad = [
             En la siguiente lectura encontrarás más información sobre las empresas y su constitución jurídica.    
         </p>
 
-        <a href="https://drive.google.com/file/d/17pnzUOvCjTKDdS0gfNrfqng5GYKi01eZ/view?usp=share_link" target="_blank">
+        <a href="./pdf/actividades/Lectura 1 las organizaciones y la empresa.pdf" target="_blank">
             <div class="linkToResourceContainer clw clbktx border1 shadow2">
                 <div class="linkToResourceContainer_title clbktx">Lectura</div>
                 
@@ -371,7 +371,7 @@ const contenidosUnidad = [
             Una vez que has estudiado los contenidos y leído la lectura anterior, realiza la siguiente actividad de aprendizaje.
         </p>
         <br>
-        <a href="" target="_blank">
+        <a href="./pdf/actividades/Actividad 1.1 La empresa y su constitución jurídica.pdf" target="_blank">
             <div class="linkToResourceContainer clw clbktx border1 shadow2">
                 <div class="linkToResourceContainer_title clbktx">Actividad 1.1 La empresa y su constitución jurídica</div>
                 
@@ -537,7 +537,7 @@ const contenidosUnidad = [
             Como se puede apreciar en la figura 1.3 la función contable debe considerarse como un insumo necesario para la función financiera.<br><br>
             Después de haber leído el tema, ya cuentas con los conocimientos necesarios para desarrollar la siguiente actividad de aprendizaje:
         </p><br>
-        <a href="" target="_blank">
+        <a href="./pdf/actividades/Actividad 1.2 Las finanzas y su importancia.pdf" target="_blank">
             <div class="linkToResourceContainer clw clbktx border1 shadow2">
                 <div class="linkToResourceContainer_title clbktx">Actividad 1.2 Las finanzas y su importancia</div>
                 
@@ -731,7 +731,7 @@ const contenidosUnidad = [
             Es momento de aplicar lo que has aprendido en esta unidad temática, realiza la siguiente actividad de aprendizaje:
         </blockquote>
 
-        <a href="https://drive.google.com/file/d/1mhsrMh21yNE5tgNHkpgEZ_lwDyC7s3uU/view?usp=share_link" target="_blank">
+        <a href="./pdf/actividades/Actividad 1.3 La empresa, sus finanzas y su relación con el entorno.pdf" target="_blank">
             <div class="linkToResourceContainer clw clbktx border1 shadow2">
                 <div class="linkToResourceContainer_title clbktx">Actividad 1.3 La empresa, sus finanzas y su relación con el entorno</div>
                 
@@ -789,20 +789,20 @@ const contenidosUnidad = [
         <!--Tarjeta 1-->
         <div class="actividadesAprendizaje border1 clgreyl2 shadow2 tarjetaActividades">
             <p class="cardTitleActividad tituloActividadAprendizaje clbktx">Actividad 1</p>
-            <p class="truncate descActividadAprendizaje clbktx">Descripción de las actividad número 1 de ejemplo</p>
+            <p class="truncate descActividadAprendizaje clbktx">Actividad 1.1  La empresa y su constitución jurídica</p>
             <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
                 <i class="material-icons clbktx">download</i>
-                <span class="clbktx">Descargar</span>
+                <a href="./pdf/actividades/Actividad 1.1 La empresa y su constitución jurídica.pdf" target="_blank" class="clbktx">Descargar</a>
             </div>
         </div>
 
         <!--Tarjeta 2-->
         <div class="actividadesAprendizaje border1 clgreyl2 shadow2 tarjetaActividades">
             <p class="cardTitleActividad tituloActividadAprendizaje clbktx">Actividad 2</p>
-            <p class="truncate descActividadAprendizaje clbktx">Descripción de las actividad número 1 de ejemplo</p>
+            <p class="truncate descActividadAprendizaje clbktx">Actividad 1.2 Las finanzas y su importancia</p>
             <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
                 <i class="material-icons clbktx">download</i>
-                <span class="clbktx">Descargar</span>
+                <a href="./pdf/actividades/Actividad 1.2 Las finanzas y su importancia.pdf"  target="_blank" class="clbktx">Descargar</a>
             </div>
         </div>
 
@@ -812,7 +812,7 @@ const contenidosUnidad = [
             <p class="truncate descActividadAprendizaje clbktx">Descripción de las actividad número 1 de ejemplo</p>
             <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
                 <i class="material-icons clbktx">download</i>
-                <span class="clbktx">Descargar</span>
+                <a href="./pdf/actividades/Actividad 1.3 La empresa, sus finanzas y su relación con el entorno.pdf" target="_blank" class="clbktx">Descargar</a>
             </div>
         </div>
 
