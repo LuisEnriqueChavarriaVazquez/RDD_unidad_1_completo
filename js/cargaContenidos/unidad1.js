@@ -275,7 +275,7 @@ const contenidosUnidad = [
                     En el siguiente link conoce las actividades que como persona física se pueden realizar:
                 </blockquote>
 
-                <a href="https://www.sat.gob.mx/personas" target="_blank">
+                <a href="https://www.sat.gob.mx/personas/declaraciones" target="_blank">
                     <div class="linkToResourceContainer clw clbktx border1 shadow2">
                         <div class="linkToResourceContainer_title clbktx">Regímenes fiscales</div>
                         
