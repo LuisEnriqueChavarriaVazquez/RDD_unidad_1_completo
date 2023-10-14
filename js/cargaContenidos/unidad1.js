@@ -19,7 +19,7 @@ const contenidosUnidad = [
         <div class="textoTitulo titleContainer white-text cl2 border1Sup">Bienvenida</div>
         <div class="cardDesign clw border1Inf">
             <p class="clbktx textoDinamicoIdentificador textoReadingH2">
-            Estimados alumnos y alumnas que cursan la unidad de aprendizaje Finanzas empresariales, que se imparte en la
+            Estimados estudiantes que cursan la unidad de aprendizaje Finanzas empresariales, que se imparte en la
             <i class="keyWord">Escuela Superior de Cómputo (ESCOM) del Instituto Politécnico Nacional (IPN)</i>, reciban la mejor de las
             bienvenidas a este <i class="keyWord">recurso didáctico digital (RDD) de la unidad temática 1: la empresa y su entorno</i>,
             correspondiente a la unidad de aprendizaje Finanzas empresariales.
