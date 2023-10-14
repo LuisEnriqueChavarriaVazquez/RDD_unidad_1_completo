@@ -615,3 +615,18 @@
     }
   }
 }
+
+#modalDisclaimer{
+  width: 500px;
+  height: auto;
+}
+
+#modalDisclaimer .modal-dialog{
+  width: 496px;
+  margin: auto auto;
+}
+
+#modalDisclaimer .modal-footer{
+  text-align: center;
+  justify-content: center;
+}

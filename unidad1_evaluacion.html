@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <title>Unidad 1</title>
     <link rel="shortcut icon" href="img/ipn.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="css/scss/addsOn/materialize.min.css">
@@ -17,6 +18,7 @@
     <!--Colors-->
     <link id="colorAdaptable" rel="stylesheet" href="css/colors/standarColors.css">
     <link id="unitColorsAdaptable" rel="stylesheet">
+    
 
     <!-- Compiled and minified JavaScript -->
     <script defer src="js/jquery.min.js"></script>
@@ -52,6 +54,7 @@
     <script defer src="js/evaluacion/randomizeQuestionsDom.js"></script>
     <script defer src="js/evaluacion/numeradorPreguntas.js"></script>
     <script defer src="js/evaluacion/pruebaPdf.js"></script>
+    <script defer src="js/evaluacion/disclaimer_user.js"></script>
 
     <!--Script para ir mostrando los elementos poco a poco-->
     <script defer src="js/scrollReveal/scrollReveal.js"></script>
@@ -78,6 +81,22 @@
         </div>
         <div class="clbktx textoStandar clgreyl2 border1 textoDeCarga">Generando cuestionario</div>
     </section>
+
+    <div class="modal fade" id="modalDisclaimer" tabindex="-1" aria-labelledby="modalDisclaimerLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header white-text cl2 border1Sup">
+              <h1 class="modal-title fs-5" id="modalDisclaimerLabel">Atención!</h1>
+            </div>
+            <div class="modal-body">
+              Estimado usuario para descargar el reporte PDF, debes contestar todas las preguntas.
+            </div>
+            <div class="modal-footer">
+              <button type="button"  class="waves-effect waves-light btn-large border1 cl4 scale-transition" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <section>
         <!--Navbar superior-->
@@ -284,9 +303,10 @@
     <section id="footerListener"></section>
 
     <!--Boton de tutorial-->
-    <a class="waves-effect waves-light btn-large botonPolilibro border1 cl4 scale-transition" id="buttonComputerHelp"><i
-            class="material-icons left">help</i>Ayuda</a>
+    <a class="waves-effect waves-light btn-large botonPolilibro border1 cl4 scale-transition" id="buttonComputerHelp"><i class="material-icons left">help</i>Ayuda</a>
+    
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>
