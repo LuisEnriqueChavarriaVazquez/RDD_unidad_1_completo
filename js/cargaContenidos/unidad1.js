@@ -64,7 +64,7 @@ const contenidosUnidad = [
         <div class="cardDesign clw border1Inf">
             <p class="clbktx textoDinamicoIdentificador textoReadingH2">
                 <i class="keyWord">El uso de este RDD de la unidad 1: la empresa y su entorno</i>, te permitirá <i class="keyWord">estudiar los contenidos</i> en la secuencia indicada en el programa de estudios de <i class="keyWord">la Unidad de aprendizaje Finanzas empresariales</i>. Para abordar dicha unidad temática se requieren seis horas de teoría y dos horas de <i class="keyWord">aprendizaje autónomo</i>. 
-                Este RDD se construyó como <i class="keyWord">apoyo educativo a las clases presenciales y no presenciales</i>; está disponible en el momento en el que lo requieras consultar, adaptándose a tu propio ritmo de aprendizaje con lo que se pretende facilitar el aprendizaje autónomo.
+                Este RDD se construyó con la intención de <i class="keyWord">apoyarte en tu proceso de aprendizaje tanto dentro como fuera del aula</i>; está disponible en el momento que lo requieras consultar, adaptándose a tu propio ritmo de aprendizaje, con los que se pretende <i class="keyWord">facilitar el aprendizaje autónomo</i> con miras a lograr los objetivos de aprendizaje de esta unidad temática 1: la empresa y su entorno.
                 
             
                 <blockquote class="clgreyl1 clgreytx textoDinamicoIdentificador textoReadingH2">
@@ -84,9 +84,9 @@ const contenidosUnidad = [
                     <p class="clbktx textoDinamicoIdentificador textoReadingH2"><b class="clgreyl3 subTitleCard">⚫ Material de apoyo.</b> En esta sección podrás leer y descargar una lectura, en la que encontrarás información relevante y
                         de interés sobre las organizaciones y en particular sobre la empresa.</p>
                     
-                    <p class="clbktx textoDinamicoIdentificador textoReadingH2"><b class="clgreyl3 subTitleCard">⚫ Actividades de aprendizaje.</b> En esta parte podrás visualizar y descargar las actividades de aprendizaje que se
-                        realizarán en el aula (en el horario de clases); se desarrollarán en forma individual o en equipo, se subirán a
-                        la plataforma indicada por el profesor(a) y tendrán valor para la evaluación.</p>
+                    <p class="clbktx textoDinamicoIdentificador textoReadingH2"><b class="clgreyl3 subTitleCard">⚫ Actividades de aprendizaje.</b> 
+                        En esta parte podrás visualizar y descargar las actividades de aprendizaje que se realizarán en el aula (en el horario de clases); se desarrollarán en forma individual o en equipo en función de la estrategia didáctica y la evidencia de aprendizaje se subirá a la plataforma indicada por el profesor(a). Es importante mencionar que la actividad 1.1 es formativa (no tendrá valor para la evaluación), en tanto que las actividades 1.2 y 1.3 sí tienen valor para la evaluación. 
+                    </p>
                     
                     <p class="clbktx textoDinamicoIdentificador textoReadingH2"><b class="clgreyl3 subTitleCard">⚫ Evaluación.</b> En este apartado encontrarás reactivos de tres tipos (opción múltiple, falso y verdadero y de arrastrar conceptos); al comprobar tus respuestas podrás visualizar la retroalimentación respectiva. Una vez terminada la evaluación podrás descargar tus resultados en formato PDF, mismo que enviarás a tu profesor(a) por el medio que te indique.</p>
                     
@@ -216,7 +216,7 @@ const contenidosUnidad = [
             </blockquote>
             
             <p class="clbktx textoDinamicoIdentificador textoReadingH2">
-              Este recurso didáctico digital (RDD) <i class="keyWord">se construyó con la intención de apoyarte en tu proceso de aprendizaje,</i> que en esta unidad temática, está dirigido a reconocer el papel de las finanzas a partir del contexto empresarial.
+            Los contenidos abordados en este RDD están dirigidos a lograr la siguiente unidad de competencia o aprendizajes esperados de la unidad 1: <i class="keyWord">reconoce el papel de las finanzas a partir del contexto empresarial</i>, por lo que su construcción fue totalmente intencionada en aras de <i class="keyWord">favorecer y apoyarte en tu proceso de aprendizaje</i>.
             </p>
             
             <div class="defaultImage">
@@ -275,7 +275,7 @@ const contenidosUnidad = [
                     En el siguiente link conoce las actividades que como persona física se pueden realizar:
                 </blockquote>
 
-                <a href="https://www.sat.gob.mx/personas/declaraciones" target="_blank">
+                <a href="https://www.sat.gob.mx/consulta/09788/emprendedor,-conoce-los-regimenes-fiscales-de-las-personas-fisicas" target="_blank">
                     <div class="linkToResourceContainer clw clbktx border1 shadow2">
                         <div class="linkToResourceContainer_title clbktx">Regímenes fiscales</div>
                         
