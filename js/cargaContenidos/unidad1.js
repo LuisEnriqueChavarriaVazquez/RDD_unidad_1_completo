@@ -32,7 +32,7 @@ const contenidosUnidad = [
                 <div class="defaultImageContent" id="bienvenida"></div>
             </div>
             <span class="referenciaIcono clgreyl1 border1 clbktx">Retomado de Pixeltrue proveniente de &nbsp; 
-            <a href="https://icons8.com/illustrations/illustration/pixeltrue-welcome">Ouch!</a>
+            <a href="https://icons8.com/illustrations/illustration/pixeltrue-welcome" target="_blank">Ouch!</a>
             </span>
         </div>
     </div>
@@ -51,7 +51,7 @@ const contenidosUnidad = [
                 <div class="defaultImageContent" id="unidadCompetencia"></div>
             </div>
             <span class="referenciaIcono clgreyl1 border1 clbktx">Retomado de Pixeltrue proveniente de &nbsp; 
-            <a href="https://icons8.com/illustrations/illustration/pixeltrue-sleeping">Ouch!</a>
+            <a href="https://icons8.com/illustrations/illustration/pixeltrue-sleeping" target="_blank">Ouch!</a>
             </span>
         </div>
     </div>
@@ -104,7 +104,7 @@ const contenidosUnidad = [
                 <div class="defaultImageContent" id="metodologia"></div>
             </div>
             <span class="referenciaIcono clgreyl1 border1 clbktx">Retomado de Pixeltrue proveniente de &nbsp; 
-            <a href="https://icons8.com/illustrations/illustration/pixeltrue-idea">Ouch!</a>
+            <a href="https://icons8.com/illustrations/illustration/pixeltrue-idea" target="_blank">Ouch!</a>
             </span>
         </div>
 
@@ -160,7 +160,7 @@ const contenidosUnidad = [
                 <div class="defaultImageContent" id="evaluacionAprendizajes"></div>
             </div>
             <span class="referenciaIcono clgreyl1 border1 clbktx">Retomado de Pixeltrue proveniente de &nbsp; 
-            <a href="https://icons8.com/illustrations/illustration/pixeltrue-teaching">Ouch!</a>
+            <a href="https://icons8.com/illustrations/illustration/pixeltrue-teaching" target="_blank">Ouch!</a>
             </span>
         </div>
     </div>
@@ -195,7 +195,7 @@ const contenidosUnidad = [
                 <div class="defaultImageContent" id="requerimientos"></div>
             </div>
             <span class="referenciaIcono clgreyl1 border1 clbktx">Retomado de Pixeltrue proveniente de &nbsp; 
-            <a href="https://icons8.com/illustrations/illustration/pixeltrue-web-development">Ouch!</a>
+            <a href="https://icons8.com/illustrations/illustration/pixeltrue-web-development" target="_blank">Ouch!</a>
             </span>
         </div>
     </div>
@@ -223,7 +223,7 @@ const contenidosUnidad = [
                 <div class="defaultImageContent" id="intro"></div>
             </div>
             <span class="referenciaIcono clgreyl1 border1 clbktx">Retomado de Pixeltrue proveniente de &nbsp; 
-                <a href="https://icons8.com/illustrations/illustration/pixeltrue-vision">Ouch!</a>
+                <a href="https://icons8.com/illustrations/illustration/pixeltrue-vision" target="_blank">Ouch!</a>
             </span> 
         </div>
 </div>`,
@@ -252,7 +252,7 @@ const contenidosUnidad = [
             <div class="defaultImageContent" id="empresa"></div>
         </div>
         <span class="referenciaIcono clgreyl1 border1 clbktx">Retomado de Pixeltrue proveniente de &nbsp; 
-        <a href="https://icons8.com/illustrations/illustration/pixeltrue-plan">Ouch!</a>
+        <a href="https://icons8.com/illustrations/illustration/pixeltrue-plan" target="_blank">Ouch!</a>
         </span>
     </div>
 </div>`,
@@ -834,7 +834,7 @@ const contenidosUnidad = [
             <div class="defaultImageContent" id="cierre"></div>
         </div>
         <span class="referenciaIcono clgreyl1 border1 clbktx">Retomado de Pixeltrue proveniente de &nbsp; 
-        <a href="https://icons8.com/illustrations/illustration/pixeltrue-success">Ouch!</a>
+        <a href="https://icons8.com/illustrations/illustration/pixeltrue-success" target="_blank">Ouch!</a>
         </span>
     </div>
 </div>
