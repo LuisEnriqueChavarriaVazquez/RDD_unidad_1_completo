@@ -754,7 +754,7 @@ const contenidosUnidad = [
             <p class="truncate descActividadAprendizaje clgreyl1 clbktx">Las organizaciones y la empresa</p>
             <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
                 <i class="material-icons clbktx">download</i>
-                <a href="/pdf/actividades/Lectura 1 las organizaciones y la empresa.pdf" target="_blank" class="clbktx">Descargar</a>
+                <a href="./pdf/actividades/Lectura 1 las organizaciones y la empresa.pdf" target="_blank" class="clbktx">Descargar</a>
             </div>
         </div>
         
