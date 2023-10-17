@@ -85,7 +85,7 @@ const contenidosUnidad = [
                         de interés sobre las organizaciones y en particular sobre la empresa.</p>
                     
                     <p class="clbktx textoDinamicoIdentificador textoReadingH2"><b class="clgreyl3 subTitleCard">⚫ Actividades de aprendizaje.</b> 
-                        En esta parte podrás visualizar y descargar las actividades de aprendizaje que se realizarán en el aula (en el horario de clases); se desarrollarán en forma individual o en equipo en función de la estrategia didáctica y la evidencia de aprendizaje se subirá a la plataforma indicada por el profesor(a). Es importante mencionar que la actividad 1.1 es formativa (no tendrá valor para la evaluación), en tanto que las actividades 1.2 y 1.3 sí tienen valor para la evaluación. 
+                        En esta parte podrás visualizar y descargar las actividades de aprendizaje que se realizarán en el aula (en el horario de clases); se desarrollarán en forma individual o en equipo en función de la estrategia didáctica, y la evidencia de aprendizaje se subirá a la plataforma indicada por el profesor(a). Es importante mencionar que la actividad 1.1 es formativa (no tendrá valor para la evaluación), en tanto que las actividades 1.2 y 1.3 sí tienen valor para la evaluación. 
                     </p>
                     
                     <p class="clbktx textoDinamicoIdentificador textoReadingH2"><b class="clgreyl3 subTitleCard">⚫ Evaluación.</b> En este apartado encontrarás reactivos de tres tipos (opción múltiple, falso y verdadero y de arrastrar conceptos); al comprobar tus respuestas podrás visualizar la retroalimentación respectiva. Una vez terminada la evaluación podrás descargar tus resultados en formato PDF, mismo que enviarás a tu profesor(a) por el medio que te indique.</p>
@@ -747,38 +747,18 @@ const contenidosUnidad = [
   `<section class="containerActividadAprendizajeFather">
     <div class="textoTitulo clbktx">Material de apoyo</div>
     <section class="gridActividadesAprendizaje">
+
         <!--Tarjeta 1-->
         <div class="actividadesAprendizaje border1 clgreyl2 shadow2 tarjetaActividades">
-            <p class="cardTitleActividad tituloActividadAprendizaje clbktx">Material de apoyo 1</p>
-            <p class="truncate descActividadAprendizaje clbktx">Descripción del material de apoyo número 1 de ejemplo
-            </p>
+            <p class="cardTitleActividad tituloActividadAprendizaje clgreyl1 clbktx">Lectura 1</p>
+            <p class="truncate descActividadAprendizaje clgreyl1 clbktx">Las organizaciones y la empresa</p>
             <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
                 <i class="material-icons clbktx">download</i>
-                <span class="clbktx">Descargar</span>
+                <a href="/pdf/actividades/Lectura 1 las organizaciones y la empresa.pdf" target="_blank" class="clbktx">Descargar</a>
             </div>
         </div>
+        
 
-        <!--Tarjeta 2-->
-        <div class="actividadesAprendizaje border1 clgreyl2 shadow2 tarjetaActividades">
-            <p class="cardTitleActividad tituloActividadAprendizaje clbktx">Material de apoyo 2</p>
-            <p class="truncate descActividadAprendizaje clbktx">Descripción del material de apoyo número 1 de ejemplo
-            </p>
-            <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
-                <i class="material-icons clbktx">download</i>
-                <span class="clbktx">Descargar</span>
-            </div>
-        </div>
-
-        <!--Tarjeta 3-->
-        <div class="actividadesAprendizaje border1 clgreyl2 shadow2 tarjetaActividades">
-            <p class="cardTitleActividad tituloActividadAprendizaje clbktx">Material de apoyo 3</p>
-            <p class="truncate descActividadAprendizaje clbktx">Descripción del material de apoyo número 1 de ejemplo
-            </p>
-            <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
-                <i class="material-icons clbktx">download</i>
-                <span class="clbktx">Descargar</span>
-            </div>
-        </div>
     </section>
 </section>
 `,
@@ -788,8 +768,8 @@ const contenidosUnidad = [
     <section class="gridActividadesAprendizaje">
         <!--Tarjeta 1-->
         <div class="actividadesAprendizaje border1 clgreyl2 shadow2 tarjetaActividades">
-            <p class="cardTitleActividad tituloActividadAprendizaje clbktx">Actividad 1</p>
-            <p class="truncate descActividadAprendizaje clbktx">Actividad 1.1  La empresa y su constitución jurídica</p>
+            <p class="cardTitleActividad tituloActividadAprendizaje clgreyl1 clbktx">Actividad 1.1</p>
+            <p class="truncate descActividadAprendizaje clgreyl1 clbktx">La empresa y su constitución jurídica</p>
             <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
                 <i class="material-icons clbktx">download</i>
                 <a href="./pdf/actividades/Actividad 1.1 La empresa y su constitución jurídica.pdf" target="_blank" class="clbktx">Descargar</a>
@@ -798,8 +778,8 @@ const contenidosUnidad = [
 
         <!--Tarjeta 2-->
         <div class="actividadesAprendizaje border1 clgreyl2 shadow2 tarjetaActividades">
-            <p class="cardTitleActividad tituloActividadAprendizaje clbktx">Actividad 2</p>
-            <p class="truncate descActividadAprendizaje clbktx">Actividad 1.2 Las finanzas y su importancia</p>
+            <p class="cardTitleActividad tituloActividadAprendizaje clgreyl1 clbktx">Actividad 1.2</p>
+            <p class="truncate descActividadAprendizaje clgreyl1 clbktx">Las finanzas y su importancia</p>
             <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
                 <i class="material-icons clbktx">download</i>
                 <a href="./pdf/actividades/Actividad 1.2 Las finanzas y su importancia.pdf"  target="_blank" class="clbktx">Descargar</a>
@@ -808,8 +788,8 @@ const contenidosUnidad = [
 
         <!--Tarjeta 3-->
         <div class="actividadesAprendizaje border1 clgreyl2 shadow2 tarjetaActividades">
-            <p class="cardTitleActividad tituloActividadAprendizaje clbktx">Actividad 3</p>
-            <p class="truncate descActividadAprendizaje clbktx">Descripción de las actividad número 1 de ejemplo</p>
+            <p class="cardTitleActividad tituloActividadAprendizaje clgreyl1 clbktx">Actividad 1.3</p>
+            <p class="truncate descActividadAprendizaje clgreyl1 clbktx">La empresa, sus finanzas y su relación con el entorno</p>
             <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
                 <i class="material-icons clbktx">download</i>
                 <a href="./pdf/actividades/Actividad 1.3 La empresa, sus finanzas y su relación con el entorno.pdf" target="_blank" class="clbktx">Descargar</a>
