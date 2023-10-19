@@ -38,7 +38,7 @@ const contenidosUnidad = [
     </div>
 
 </div>
-<div id="test-swipe-2" class="tabsContentContainerInfo">
+<div id="test-swipe-2" class="tabsContentContainerInfo" style="display: none;">
 
     <div class="shadow4 border1 clw">
         <div class="textoTitulo titleContainer white-text cl2 border1Sup">Unidad de competencia</div>
@@ -57,7 +57,7 @@ const contenidosUnidad = [
     </div>
 
 </div>
-<div id="test-swipe-3" class="tabsContentContainerInfo">
+<div id="test-swipe-3" class="tabsContentContainerInfo" style="display: none;">
 
     <div class="shadow4 border1 clw">
         <div class="textoTitulo titleContainer white-text cl2 border1Sup">Metodología</div>
@@ -111,7 +111,7 @@ const contenidosUnidad = [
     </div>
 
 </div>
-<div id="test-swipe-4" class="tabsContentContainerInfo">
+<div id="test-swipe-4" class="tabsContentContainerInfo" style="display: none;">
 
     <div class="shadow4 border1 clw">
         <div class="textoTitulo titleContainer white-text cl2 border1Sup">Evaluación de los aprendizajes</div>
@@ -166,7 +166,7 @@ const contenidosUnidad = [
     </div>
 
 </div>
-<div id="test-swipe-5" class="tabsContentContainerInfo">
+<div id="test-swipe-5" class="tabsContentContainerInfo" style="display: none;">
 
     <div class="shadow4 border1 clw">
         <div class="textoTitulo titleContainer white-text cl2 border1Sup">Requerimientos</div>
