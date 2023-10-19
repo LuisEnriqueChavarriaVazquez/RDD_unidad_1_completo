@@ -19,3 +19,7 @@ setTimeout( () => {
         localStorage.setItem('urlActualRetorno', textoDespuesDelUltimoSlash);
     }
 }, 1000);
+
+window.addEventListener('popstate', function(event) {
+    console.log("Botón de retroceso/avance clickeado!");
+});
