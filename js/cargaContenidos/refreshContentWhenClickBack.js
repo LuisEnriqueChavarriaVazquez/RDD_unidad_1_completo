@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
+setTimeout( () => {
     // Obtiene la URL actual del navegador
     const url = window.location.href;
-
+    
     // Divide la URL por el carácter "/" y toma el último elemento
     const partes = url.split('/');
     const textoDespuesDelUltimoSlash = partes[partes.length - 1];
-
+    
     // Verifica si urlActualRetorno existe y no es 'unidad1.html' en el Local Storage
     const urlActualRetorno = localStorage.getItem('urlActualRetorno');
     
@@ -18,4 +18,4 @@ document.addEventListener('DOMContentLoaded', function() {
         // Si urlActualRetorno es igual a 'unidad1.html', guárdalo en el Local Storage
         localStorage.setItem('urlActualRetorno', textoDespuesDelUltimoSlash);
     }
-});
+}, 1000);
