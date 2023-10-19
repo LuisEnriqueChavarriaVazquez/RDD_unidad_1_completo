@@ -820,8 +820,11 @@ const contenidosUnidad = [
 </div>
 `,
   `11 (referencias)`,
-  `12
-`,
+  `12`,
+  `13`,
+  `14`,
+  `15`,
+  `16`,
 ];
 
 console.log("contenidosUnidad: ", contenidosUnidad.length);
@@ -848,8 +851,13 @@ buttonContaineChargeContent.addEventListener("click", function (event) {
   if (event.target.classList.contains("deskOption")) {
     console.log(event.target);
     let buttonIndex = event.target.getAttribute("contador");
-    contenedorParaElContenidoDeLaUnidad.innerHTML =
-      contenidosUnidad[buttonIndex];
+    if(contenidosUnidad[buttonIndex] == undefined){
+        let a1tutorialButton = document.getElementById('a1tutorialButton');
+        a1tutorialButton.click();
+    }else{
+        contenedorParaElContenidoDeLaUnidad.innerHTML =
+        contenidosUnidad[buttonIndex];
+    }
   }
 });
 
@@ -866,6 +874,14 @@ for (var i = 0; i < buttonContaineChargeContentMobile.length; i++) {
         let buttonIndex = event.target.getAttribute("contador");
         contenedorParaElContenidoDeLaUnidad.innerHTML =
           contenidosUnidad[buttonIndex];
+
+        if(contenidosUnidad[buttonIndex] == undefined){
+            let a1tutorialButton = document.getElementById('a1tutorialButton');
+            a1tutorialButton.click();
+        }else{
+            contenedorParaElContenidoDeLaUnidad.innerHTML =
+            contenidosUnidad[buttonIndex];
+        }
       }
     }
   );
