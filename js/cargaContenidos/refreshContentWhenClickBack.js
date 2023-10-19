@@ -9,7 +9,7 @@ setTimeout( () => {
     // Verifica si urlActualRetorno existe y no es 'unidad1.html' en el Local Storage
     const urlActualRetorno = localStorage.getItem('urlActualRetorno');
     
-    if (urlActualRetorno === null || urlActualRetorno !== 'unidad1.html') {
+    if (urlActualRetorno === null || urlActualRetorno !== 'unidad1.html' || textoDespuesDelUltimoSlash === 'unidad1.html') {
         // Si urlActualRetorno no existe o es diferente de 'unidad1.html', guárdalo y recarga la página
         localStorage.setItem('urlActualRetorno', textoDespuesDelUltimoSlash);
         //alert('reload')
