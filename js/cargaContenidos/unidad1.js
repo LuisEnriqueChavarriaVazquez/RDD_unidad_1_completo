@@ -772,7 +772,7 @@ const contenidosUnidad = [
             <p class="truncate descActividadAprendizaje clgreyl1 clbktx">La empresa y su constitución jurídica</p>
             <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
                 <i class="material-icons clbktx">download</i>
-                <a href="./pdf/actividades/Actividad 1.1 La empresa y su constitución jurídica.pdf" target="_blank" class="clbktx">Descargar</a>
+                <a href="./pdf/actividades/Actividad 1.1 La empresa y su constitucion juridica.pdf" target="_blank" class="clbktx">Descargar</a>
             </div>
         </div>
 
@@ -792,7 +792,7 @@ const contenidosUnidad = [
             <p class="truncate descActividadAprendizaje clgreyl1 clbktx">La empresa, sus finanzas y su relación con el entorno</p>
             <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
                 <i class="material-icons clbktx">download</i>
-                <a href="./pdf/actividades/Actividad 1.3 La empresa, sus finanzas y su relación con el entorno.pdf" target="_blank" class="clbktx">Descargar</a>
+                <a href="./pdf/actividades/Actividad 1.3 La empresa, sus finanzas y su relacion con el entorno.pdf" target="_blank" class="clbktx">Descargar</a>
             </div>
         </div>
 
