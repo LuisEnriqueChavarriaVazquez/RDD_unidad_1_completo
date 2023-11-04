@@ -371,7 +371,7 @@ const contenidosUnidad = [
             Una vez que has estudiado los contenidos y leído la lectura anterior, realiza la siguiente actividad de aprendizaje.
         </p>
         <br>
-        <a href="./pdf/actividades/Actividad 1.1 La empresa y su constitución jurídica.pdf" target="_blank">
+        <a href="./pdf/actividades/Actividad 1.1 La empresa y su constitucion juridica.pdf" target="_blank">
             <div class="linkToResourceContainer clw clbktx border1 shadow2">
                 <div class="linkToResourceContainer_title clbktx">Actividad 1.1 La empresa y su constitución jurídica</div>
                 
@@ -731,7 +731,7 @@ const contenidosUnidad = [
             Es momento de aplicar lo que has aprendido en esta unidad temática, realiza la siguiente actividad de aprendizaje:
         </blockquote>
 
-        <a href="./pdf/actividades/Actividad 1.3 La empresa, sus finanzas y su relación con el entorno.pdf" target="_blank">
+        <a href="./pdf/actividades/Actividad 1.3 La empresa, sus finanzas y su relacion con el entorno.pdf" target="_blank">
             <div class="linkToResourceContainer clw clbktx border1 shadow2">
                 <div class="linkToResourceContainer_title clbktx">Actividad 1.3 La empresa, sus finanzas y su relación con el entorno</div>
                 
