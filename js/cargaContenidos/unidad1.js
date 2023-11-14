@@ -150,7 +150,7 @@ const contenidosUnidad = [
                         </tr>
                         <tr>
                             <td class="cellCenter textoStandarTable" colspan="2">Total</td>
-                            <td class="cellCenter textoStandarTable">30 puntos</td>
+                            <td class="cellCenter textoStandarTable">20 puntos</td>
                         </tr>
                     </tbody>
                 </table>
