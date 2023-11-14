@@ -136,7 +136,7 @@ const contenidosUnidad = [
                             <td class="cellCenter textoStandarTable" rowspan="4">Unidad 1</td>
                             <td class="cellCenter textoStandarTable">Actividad 1.1  La empresa y su constitución jurídica</td>
                             <td class="textoStandarTable">Cuestionario en formato Tangram</td>
-                            <td class="cellCenter textoStandarTable">10 puntos</td>
+                            <td class="cellCenter textoStandarTable">Sin valor para la evaluación</td>
                         </tr>
                         <tr>
                             <td class="cellCenter textoStandarTable">Actividad 1.2  Las finanzas y su importancia</td>
@@ -298,53 +298,53 @@ const contenidosUnidad = [
                 </p>
 
                 <blockquote class="clgreyl1 clgreytx textoDinamicoIdentificador textoReadingH2">
-                    Cabe señalar que la <i class="keyWord">persona moral es una agrupación de personas que pueden constituirse jurídicamente como sociedades o asociaciones,</i> las más usuales se pueden visualizar en la tabla 1.1
+                    Cabe señalar que la <i class="keyWord">persona moral es una agrupación de personas que pueden constituirse jurídicamente como sociedades o asociaciones,</i> a continuación se mencionan algunas:
                 </blockquote>
 
                     <table class="table table-dark table-bordered col-7 mx-auto clw shadow2 border1">
 
-                        <caption style="caption-side: top;" class="text-center">Tabla 1.1 Constitución jurídica de las personas morales</caption>
+                        <!-- <caption style="caption-side: top;" class="text-center">Tabla 1.1 Constitución jurídica de las personas morales</caption> -->
 
                         <thead>
                             <tr>
-                                <th class="clbktx textoStandarTable font-weight-bold">Sociedad/Asociación:</th>
-                                <th class="clbktx textoStandarTable font-weight-bold">Regulada por:</th>
+                                <th class="clbktx textoStandarTable font-weight-bold"><b>Sociedad/Asociación:</b></th>
+                                <!-- <th class="clbktx textoStandarTable font-weight-bold">Regulada por:</th> -->
                             </tr>
                         </thead>
 
-                        <tbody>
+                        <tbody style="margin: 10px;">
                             <tr>
-                                <td class="clbktx textoStandarTable">Sociedad en nombre colectivo (S.N.C)</td>
-                                <td rowspan="7" class="clbktx textoStandarTable text-center align-middle">Ley General de Sociedades Mercantiles (L.G.S.M)</td>
+                                <td class="clbktx textoStandarTable">&nbsp;&nbsp;&nbsp;&nbsp;Sociedad en nombre colectivo (S.N.C)</td>
+                                <!-- <td rowspan="7" class="clbktx textoStandarTable text-center align-middle">Ley General de Sociedades Mercantiles (L.G.S.M)</td> -->
                             </tr>
                             <tr>
-                                <td class="clbktx textoStandarTable">Sociedad en comandita simpe (S.C.S)</td>
+                                <td class="clbktx textoStandarTable">&nbsp;&nbsp;&nbsp;&nbsp;Sociedad en comandita simpe (S.C.S)</td>
                             </tr>
                             <tr>
-                                <td class="clbktx textoStandarTable">Sociedad de responsabilidad limitada (S.R.L)</td>
+                                <td class="clbktx textoStandarTable">&nbsp;&nbsp;&nbsp;&nbsp;Sociedad de responsabilidad limitada (S.R.L)</td>
                             </tr>
                             <tr>
-                                <td class="clbktx textoStandarTable">Sociedad anónima (S.A)</td>
+                                <td class="clbktx textoStandarTable">&nbsp;&nbsp;&nbsp;&nbsp;Sociedad anónima (S.A)</td>
                             </tr>
                             <tr>
-                                <td class="clbktx textoStandarTable">Sociedad en comandita por acciones (S.C.A)</td>
+                                <td class="clbktx textoStandarTable">&nbsp;&nbsp;&nbsp;&nbsp;Sociedad en comandita por acciones (S.C.A)</td>
                             </tr>
                             <tr>
-                                <td class="clbktx textoStandarTable">Sociedad por acciones simplificada (S.A.S)</td>
+                                <td class="clbktx textoStandarTable">&nbsp;&nbsp;&nbsp;&nbsp;Sociedad por acciones simplificada (S.A.S)</td>
                             </tr>
                             <tr>
-                                <td class="clbktx textoStandarTable">Sociedad cooperativa</td>
+                                <td class="clbktx textoStandarTable">&nbsp;&nbsp;&nbsp;&nbsp;Sociedad cooperativa</td>
                             </tr>
                             <tr>
-                                <td class="clbktx textoStandarTable">Asociación civil (A.C)</td>
-                                <td rowspan="2" class="clbktx textoStandarTable text-center align-middle">Código Civil</td>
+                                <td class="clbktx textoStandarTable">&nbsp;&nbsp;&nbsp;&nbsp;Asociación civil (A.C)</td>
+                                <!-- <td rowspan="2" class="clbktx textoStandarTable text-center align-middle">Código Civil</td> -->
                             </tr>
                             <tr>
-                                <td class="clbktx textoStandarTable">Sociedad civil (S.C)</td>
+                                <td class="clbktx textoStandarTable">&nbsp;&nbsp;&nbsp;&nbsp;Sociedad civil (S.C)</td>
                             </tr>
                         </tbody>
 
-                        <caption style="caption-side: bottom;" class="text-center">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023). Con base en la Ley General de Sociedades Mercantiles, Ley General de Sociedades Cooperativas y Código Civil.</caption>
+                        <!-- <caption style="caption-side: bottom;" class="text-center">Hernández, J., Rodríguez, E. & Jiménez, Y. (2023). Con base en la Ley General de Sociedades Mercantiles, Ley General de Sociedades Cooperativas y Código Civil.</caption> -->
 
                     </table>
             </div>
@@ -355,7 +355,7 @@ const contenidosUnidad = [
             En la siguiente lectura encontrarás más información sobre las empresas y su constitución jurídica.    
         </p>
 
-        <a href="./pdf/actividades/Lectura 1 las organizaciones y la empresa.pdf" target="_blank">
+        <a href="./pdf/actividades/Lectura 1 las organizaciones y la empresa-1.pdf" target="_blank">
             <div class="linkToResourceContainer clw clbktx border1 shadow2">
                 <div class="linkToResourceContainer_title clbktx">Lectura</div>
                 
@@ -754,7 +754,7 @@ const contenidosUnidad = [
             <p class="truncate descActividadAprendizaje clgreyl1 clbktx">Las organizaciones y la empresa</p>
             <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
                 <i class="material-icons clbktx">download</i>
-                <a href="./pdf/actividades/Lectura 1 las organizaciones y la empresa.pdf" target="_blank" class="clbktx">Descargar</a>
+                <a href="./pdf/actividades/Lectura 1 las organizaciones y la empresa-1.pdf" target="_blank" class="clbktx">Descargar</a>
             </div>
         </div>
         
