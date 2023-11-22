@@ -755,7 +755,7 @@ const contenidosUnidad = [
             <a href="./pdf/actividades/Lectura 1 las organizaciones y la empresa-1.pdf" target="_blank">
                 <div class="buttonDownloadActividadAprendizaje clw border1 shadow2 waves-effect">
                     <i class="material-icons clbktx">download</i>
-                    <a class="clbktx">Descargar</a>
+                    <span class="clbktx">Descargar</span>
                 </div>
             </a>
         </div>
